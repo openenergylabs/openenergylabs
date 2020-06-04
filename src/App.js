@@ -22,6 +22,7 @@ import eps from "./media/eps.png";
 import fik from "./media/fik.png";
 import uik from "./media/uik.png";
 import Partners from "./components/partners";
+import MailModal from "./components/modal";
 
 // TODO: change favicon OEL
 
@@ -29,11 +30,13 @@ function App() {
   return (
     <Layout>
       <div className="App">
+        <MailModal />
         <header className={"section "}>
           <Hero />
         </header>
         {/* Campaign video */}
         <section
+          id="videosection"
           className={"section"}
           style={{
             backgroundColor: "#5D4DC4",
@@ -57,20 +60,19 @@ function App() {
             }}
           >
             <p style={{ alignSelf: "flex-end", color: "#fff" }}>
-              Crowd investment campaign video caption
+              Watch our Crowdcube campaign video
             </p>
-            <video
-              className="crowd-vd"
-              width={"80%"}
-              src={mVideo}
-              controls={true}
-            ></video>
+            <video className="crowd-vd" src={mVideo} controls={true}></video>
             <ButtonGroup
-              leftBtnOptions={{ path: "/", color: "#fff", name: "what we do" }}
-              rightBtnOptions={{
-                path: "/",
+              leftBtnOptions={{
+                path: "#whatwedo",
                 color: "#fff",
-                name: "Invest Now ",
+                name: "Register to invest",
+              }}
+              rightBtnOptions={{
+                path: "#whatwedo",
+                color: "#fff",
+                name: "what we do",
               }}
             />
           </Container>
@@ -96,46 +98,52 @@ function App() {
             paddingBottom: "10%",
           }}
         >
-          <h3 className="section-title">What We Do</h3>
+          <h3 className="section-title font-glyph">What we do</h3>
           <Row className={"services"}>
             <Col sm className="service-item">
               <img src={learningIcon} alt="image" />
-              <p className="service-title">Educational programmes</p>
+              <p className="service-title font-glyph">Energy Makers Academy</p>
               <p className="service-sub">
-                Paragraph of text all about stuff related to how cool we are
-                Paragraph of text all about stuff related to how cool we are
+                We teach students through a “learn by making” approach,
+                providing them with the skills and knowledge to develop
+                universal access to electricity.
               </p>
             </Col>
             <Col sm className="service-item">
               <img src={captureIcon} alt="image" />
-              <p className="service-title">Energy development</p>
+              <p className="service-title">Energy Development Toolkits</p>
               <p className="service-sub">
-                {" "}
-                Paragraph of text all about stuff related to how cool we are
-                Paragraph of text all about stuff related to how cool we are
+                Our mobile learning platform and integrated hardware demystifies
+                energy systems, and offers powerful capabilities for their
+                design.
               </p>
             </Col>
             <Col sm className="service-item">
               <img src={energyIcon} alt="image" />
-              <p className="service-title">Innovation at our core</p>
+              <p className="service-title">Reduce Energy Poverty</p>
               <p className="service-sub">
-                Paragraph of text all about stuff related to how cool we are
-                Paragraph of text all about stuff related to how cool we are
+                We empower and inspire people and communities to innovate
+                towards affordable, reliable and sustainable energy systems.
               </p>
             </Col>
           </Row>
           <ButtonGroup
-            leftBtnOptions={{ path: "/", color: "#5D4DC4", name: "what we do" }}
-            rightBtnOptions={{
+            leftBtnOptions={{
               path: "/",
               color: "#5D4DC4",
-              name: "Invest Now ",
+              name: "Register to invest",
+            }}
+            rightBtnOptions={{
+              path: "#le1section",
+              color: "#5D4DC4",
+              name: "Our first product",
             }}
           />
         </section>
 
         {/* Introducing our first product */}
         <section
+          id="le1section"
           className={"section"}
           style={{
             backgroundColor: "#0600FF",
@@ -148,12 +156,33 @@ function App() {
               ...common.centerItemsVt,
             }}
           >
-            <h3 style={{ margin: "10%" }}>
+            <h3
+              className="font-glyph"
+              style={{ margin: "5%", fontSize: "50px" }}
+            >
               The world’s first learnable charge controller
             </h3>
-            <Row>
-              <Col sm>
-                <img style={{ maxWidth: "100%" }} src={le1} />
+            <Row
+              style={{
+                height: "100%",
+              }}
+            >
+              <Col
+                style={{
+                  position: "relative",
+                }}
+                sm
+                lg={7}
+              >
+                <img
+                  style={{
+                    maxWidth: "100%",
+                    height: "100%",
+                    position: "absolute",
+                    bottom: 0,
+                  }}
+                  src={le1}
+                />
               </Col>
               <Col
                 id="le1-intro-col2"
@@ -162,6 +191,7 @@ function App() {
                   display: "flex",
                   alignItems: "center",
                   flexDirection: "column",
+                  position: "relative",
                 }}
               >
                 <div
@@ -174,27 +204,32 @@ function App() {
                     width: "60%",
                   }}
                 >
-                  <p>Introducing our first product</p>
-                  <h2>Le1</h2>
+                  <p style={{ fontSize: "25px" }}>
+                    Introducing our first product
+                  </p>
+                  <h2 style={{ fontSize: "50px" }}>Le1</h2>
                   <p>
-                    A short introductory paragraph about the Le1 – its origins
-                    and its impact, as well as future plans
+                    The Le1 gives students hands-on experience of building a
+                    renewable electricity supply, able to provide reliable power
+                    for lighting and mobile-phone charging
                   </p>
                 </div>
-                <button
-                  style={{
-                    borderStyle: "none",
-                    borderRadius: 70,
-                    width: 120,
-                    height: 120,
-                    border: "1px solid #6CCDF2",
-                    background: "none",
-                    color: "#6CCDF2",
-                    margin: 30,
-                  }}
-                >
-                  Shop here
-                </button>
+                <a href="#videosection">
+                  <button
+                    style={{
+                      borderStyle: "none",
+                      borderRadius: 70,
+                      width: 120,
+                      height: 120,
+                      border: "1px solid #6CCDF2",
+                      background: "none",
+                      color: "#6CCDF2",
+                      margin: 30,
+                    }}
+                  >
+                    See Le1 in action
+                  </button>
+                </a>
               </Col>
             </Row>
           </Container>
@@ -216,20 +251,41 @@ function App() {
               height: "100%",
               display: "flex",
               flexDirection: "column",
+              justifyContent: "center",
               alignItems: "center",
               padding: "3%",
             }}
           >
-            <h3
+            <div
               style={{
-                textAlign: "center",
-                padding: "2%",
-                color: "#5D4DC4",
-                fontSize: "2.5em",
+                marginBottom: "2.5em",
+                flexDirection: "column",
+                display: "flex",
+                alignItems: "center",
               }}
             >
-              Collaborators & partners
-            </h3>
+              <h3
+                className="font-glyph"
+                style={{
+                  textAlign: "center",
+                  color: "#5D4DC4",
+                  fontSize: "64px",
+                }}
+              >
+                Our partners & investors
+              </h3>
+              <p
+                style={{
+                  textAlign: "center",
+                  color: "#5D4DC4",
+                  fontSize: "20px",
+                  width: "80%",
+                }}
+              >
+                We're backed by some of the leading organisations in energy,
+                development and impact investing.
+              </p>
+            </div>
             <Partners logos={[eps, fik, uik, bcv, eps]} />
             <Partners logos={[eps, uik, fik, bcv, eps]} />
             <Partners logos={[fik, uik, eps, bcv, eps]} />
@@ -238,12 +294,12 @@ function App() {
                 leftBtnOptions={{
                   path: "/",
                   color: "#5D4DC4",
-                  name: "what we do",
+                  name: "Register to invest",
                 }}
                 rightBtnOptions={{
-                  path: "/",
+                  path: "mailto:hello@localelectricity.org",
                   color: "#5D4DC4",
-                  name: "Invest Now ",
+                  name: "Partner with us",
                 }}
               />
             </div>
@@ -251,7 +307,7 @@ function App() {
         </section>
 
         <footer
-          className={"section"}
+          // className={"section"}
           style={{ backgroundColor: "#5D4DC4", width: "100%" }}
         >
           <Container fluid>
@@ -279,11 +335,11 @@ function App() {
                     }}
                   >
                     <div id="usef-links">
-                      <a href="#">
+                      <a href="https://facebook.com/localelectricity">
                         {" "}
                         <p>&#8599; Facebook</p>
                       </a>
-                      <a href="#">
+                      <a href="https://twitter.com/openenergylabs">
                         {" "}
                         <p>&#8599; Twitter</p>
                       </a>
@@ -297,9 +353,13 @@ function App() {
                       </a>
                     </div>
 
-                    <div style={{}}>
-                      <p>Contact Us </p>
-                      <p>Colophone</p>
+                    <div>
+                      <a
+                        style={{ color: "#fff", textDecoration: "underline" }}
+                        href={"mailto:hello@localelectricity.org"}
+                      >
+                        Contact Us{" "}
+                      </a>
                     </div>
                   </div>{" "}
                 </div>
@@ -320,7 +380,7 @@ function App() {
                 </div>
               </Col>
               <Col>
-                <img width={"100%"} src={map} />
+                <img width={"100%"} height={"100%"} src={map} />
               </Col>
             </Row>
           </Container>

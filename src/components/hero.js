@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import OelButton from "./button";
 import ButtonGroup from "./buttonGroup";
+import MailModal from "./modal";
 
 function Hero() {
+  const [modalShow, setModalShow] = useState(false);
   return (
     <div
       style={{
@@ -17,19 +19,29 @@ function Hero() {
       }}
     >
       <h1 className={"hdr-text font-glyph"}>Open Energy Labs</h1>
-      <h5 className="sub-hdr-text font-glyph">
-        Statement about company vision{" "}
-      </h5>
+      <p className="sub-hdr-text font-glyph">
+        Universal access to electricity through education
+      </p>
       {/* <div style={{ margin: "5%", position: "absolute", bottom: "15%" }}>
         <OelButton name="What we do"></OelButton>
         <OelButton name="What we do"></OelButton>
       </div> */}
+
+      {console.log(modalShow)}
+      <MailModal show={modalShow} onHide={() => {}} />
       <ButtonGroup
-        leftBtnOptions={{ path: "/", color: "#5D4DC4", name: "what we do" }}
-        rightBtnOptions={{
+        leftBtnOptions={{
           path: "/",
           color: "#5D4DC4",
-          name: "Invest Now ",
+          name: "Register to invest",
+          onPressed: () => {
+            setModalShow(true);
+          },
+        }}
+        rightBtnOptions={{
+          path: "#videosection",
+          color: "#5D4DC4",
+          name: "Learn more",
         }}
       />
       <div

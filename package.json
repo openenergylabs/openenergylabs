@@ -1,5 +1,5 @@
 {
-  "homepage": "https://openenergylabs.github.io/openenergylabs",
+  "homepage": "https://openenergylabs.co",
   "name": "openenergylabs",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +10,7 @@
     "bootstrap": "^4.5.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
+    "react-bootstrap-mailchimp-subscribe": "^1.0.5",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },

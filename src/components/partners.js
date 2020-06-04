@@ -18,12 +18,11 @@ function Partners({ logos }) {
             <Col
               sm
               style={{
-                marginBottom: 20,
+                marginBottom: 50,
                 width: "100%",
                 flexGrow: 0,
                 justifyContent: "center",
                 alignItems: "center",
-
                 display:'flex'
               }}
             >

@@ -1,7 +1,13 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 
-function OelButton({ name, color }) {
+function OelButton({ name, color, path, onPressed }) {
+  const onButtonPressed = () => {
+    if (onPressed) {
+      onPressed();
+    }
+    return;
+  };
   return (
     <a
       style={{
@@ -11,7 +17,7 @@ function OelButton({ name, color }) {
         alignItems: "center",
         textDecoration: "none",
       }}
-      href="#whatwedo"
+      href={path}
     >
       <div
         style={{
@@ -34,6 +40,7 @@ function OelButton({ name, color }) {
         ></span>
       </div>
       <Button
+        onClick={onButtonPressed}
         className="oelbtn"
         variant={"outline-primary"}
         style={{
@@ -53,7 +60,7 @@ const buttonStyles = {
   oelAntena: {
     display: "inline-block",
     height: 10,
-    border: "1px solid",
+    borderLeft: "1px solid",
     lineHeight: 0,
     position: "relative",
     bottom: -1,

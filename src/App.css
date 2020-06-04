@@ -3,16 +3,16 @@
 }
 
 .section {
-  height: 100%;
+  height: 100vh;
 }
 
 .sub-hdr-text {
-  font-size: 1.5em;
+  font-size: 28px;
   color: #5d4dc4;
   margin-bottom: 3rem;
 }
 .hdr-text {
-  font-size: 5em;
+  font-size: 80px;
   text-align: center;
   color: #5d4dc4;
   margin: 50px;
@@ -20,7 +20,9 @@
 
 /* crowd investment  */
 .crowd-vd {
-  width: 80%;
+  /* width: 80%; */
+  height: 60%;
+  width: auto;
 }
 
 /* What we do  */
@@ -49,18 +51,20 @@
   justify-content: space-evenly;
 }
 .service-title {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  font-size: 32px;
   color: #5d4dc4;
 }
 
 .service-sub {
   text-align: center;
   color: #5d4dc4;
+  font-size: 18px;
 }
 
 /* Buttons group styles */
 .buttonGrp {
-  width: 30rem;
+  width: 50rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -96,8 +100,8 @@
   margin: 0;
 }
 
-#usef-links a{
-  text-decoration: none !important;
+#usef-links a {
+  /* text-decoration: ; */
   color: #fff !important;
 }
 
