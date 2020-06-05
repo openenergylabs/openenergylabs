@@ -7,6 +7,9 @@ import learningIcon from "../media/Learning.png";
 import energyIcon from "../media/Energy.png";
 import captureIcon from "../media/Capture.png";
 import MailModal from "../components/modal";
+import Wd1 from "../media/svgComponents/wd1";
+import Wd2 from "../media/svgComponents/wd2";
+import Wd3 from "../media/svgComponents/wd3";
 
 function WhatWeDoSection() {
   const [show, setShow] = useState(false);
@@ -28,7 +31,7 @@ function WhatWeDoSection() {
       <h3 className="section-title font-glyph">What we do</h3>
       <Row className={"services"}>
         <Col sm className="service-item">
-          <img src={learningIcon} alt="image" />
+          <Wd2 />
           <p className="service-title font-glyph">Energy Makers Academy</p>
           <p className="service-sub">
             We teach students through a “learn by making” approach, providing
@@ -37,7 +40,7 @@ function WhatWeDoSection() {
           </p>
         </Col>
         <Col sm className="service-item font-glyph">
-          <img src={captureIcon} alt="image" />
+          <Wd3 />
           <p className="service-title">Energy Development Toolkits</p>
           <p className="service-sub">
             Our mobile learning platform and integrated hardware demystifies
@@ -45,7 +48,7 @@ function WhatWeDoSection() {
           </p>
         </Col>
         <Col sm className="service-item font-glyph">
-          <img src={energyIcon} alt="image" />
+          <Wd1 />
           <p className="service-title">Reduce Energy Poverty</p>
           <p className="service-sub">
             We empower and inspire people and communities to innovate towards
