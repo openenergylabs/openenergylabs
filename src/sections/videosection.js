@@ -36,7 +36,7 @@ function VideoSection() {
           padding: "5%",
         }}
       >
-        <p style={{ alignSelf: "flex-end", color: "#fff" }}>
+        <p style={{ alignSelf: "flex-end", color: "#fde3ca" }}>
           Watch our Crowdcube campaign video
         </p>
 
@@ -48,13 +48,13 @@ function VideoSection() {
         >
           <OelButton
             path="#whatwedo"
-            color="#fff"
+            color="#fde3ca"
             name="What we do"
             hideAnt={true}
           />
           <OelButton
             onPressed={handleShow}
-            color={"#fff"}
+            color={"#fde3ca"}
             name={"Register to invest"}
           />
         </div>
@@ -69,7 +69,7 @@ function VideoSection() {
       </Container>
       <div
         style={{
-          borderBottom: "1px #fff solid",
+          borderBottom: "1px #fde3ca solid",
           width: "95%",
           position: "absolute",
           bottom: "5%",
