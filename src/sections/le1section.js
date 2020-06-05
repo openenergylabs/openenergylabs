@@ -3,11 +3,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import common from "../styles/styles";
-import le1 from "../media/Le1.png";
 import MailModal from "../components/modal";
+import Le1 from "../media/svgComponents/Le1";
 
 function Le1Section() {
-    
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -43,7 +42,7 @@ function Le1Section() {
             sm
             lg={7}
           >
-            <img
+            {/* <img
               style={{
                 maxWidth: "100%",
                 height: "100%",
@@ -51,7 +50,9 @@ function Le1Section() {
                 bottom: 0,
               }}
               src={le1}
-            />
+            /> */}
+
+            <Le1 style={{ width: "100%" }} />
           </Col>
           <Col
             id="le1-intro-col2"
