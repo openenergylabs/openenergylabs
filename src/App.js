@@ -104,9 +104,8 @@ function App() {
               <img src={learningIcon} alt="image" />
               <p className="service-title font-glyph">Energy Makers Academy</p>
               <p className="service-sub">
-                We teach students through a “learn by making” approach,
-                providing them with the skills and knowledge to develop
-                universal access to electricity.
+                Our “learn by making” approach provides students with the skills
+                and knowledge to develop universal access to electricity.
               </p>
             </Col>
             <Col sm className="service-item">
