@@ -7,11 +7,15 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "@u-wave/react-vimeo": "^0.8.3",
     "bootstrap": "^4.5.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-bootstrap-mailchimp-subscribe": "^1.0.5",
     "react-dom": "^16.13.1",
+    "react-mailchimp-form": "^1.0.2",
+    "react-mailchimp-subscribe": "^2.1.0",
+    "react-player": "^2.1.1",
     "react-scripts": "3.4.1"
   },
   "scripts": {

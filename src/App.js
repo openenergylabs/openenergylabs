@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Layout from "./components/layout";
 import "./App.css";
 import Hero from "./components/hero";
@@ -9,6 +9,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import common from "./styles/styles";
 import ButtonGroup from "./components/buttonGroup";
+import ReactPlayer from "react-player";
+import Vimeo from "@u-wave/react-vimeo";
 // image imports
 import logo from "./media/logo192.png";
 import map from "./media/map.png";
@@ -24,15 +26,65 @@ import uik from "./media/uik.png";
 import Partners from "./components/partners";
 import MailModal from "./components/modal";
 
-// TODO: change favicon OEL
+// TODO: Change favicon OEL
 
 function App() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <Layout>
       <div className="App">
-        <MailModal />
-        <header className={"section "}>
-          <Hero />
+        <MailModal show={show} onHide={handleClose} />
+        <header id={"hero"} className={"section"}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              height: "100vh",
+              backgroundColor: "#FDE3CA",
+              justifyContent: "center",
+              position: "relative",
+              padding: 20,
+            }}
+          >
+            <h1 className={"hdr-text font-glyph"}>Open Energy Labs</h1>
+            <p className="sub-hdr-text font-glyph">
+              Universal access to electricity through education
+            </p>
+            {/* <div style={{ margin: "5%", position: "absolute", bottom: "15%" }}>
+        <OelButton name="What we do"></OelButton>
+        <OelButton name="What we do"></OelButton>
+      </div> */}
+
+            <div
+              className="buttonGrp"
+              style={{ marginTop: "1rem", marginBottom: "1rem" }}
+            >
+              <OelButton
+                path="#videosection"
+                color="#5D4DC4"
+                name="Learn more"
+                hideAnt={true}
+              />
+              <OelButton
+                onPressed={handleShow}
+                color={"#5D4DC4"}
+                name={"Register to invest"}
+              />
+            </div>
+            <div
+              style={{
+                borderBottom: "1px #5D4DC4 solid",
+                width: "95%",
+                position: "absolute",
+                bottom: "5%",
+              }}
+            ></div>
+          </div>
         </header>
         {/* Campaign video */}
         <section
@@ -62,19 +114,33 @@ function App() {
             <p style={{ alignSelf: "flex-end", color: "#fff" }}>
               Watch our Crowdcube campaign video
             </p>
-            <video className="crowd-vd" src={mVideo} controls={true}></video>
-            <ButtonGroup
-              leftBtnOptions={{
-                path: "#whatwedo",
-                color: "#fff",
-                name: "Register to invest",
+
+            <Vimeo height={500} video="https://vimeo.com/425909940" />
+
+            <div
+              className="buttonGrp"
+              style={{ marginTop: "3rem", marginBottom: "1rem" }}
+            >
+              <OelButton
+                path="#whatwedo"
+                color="#fff"
+                name="what we do"
+                hideAnt={true}
+              />
+              <OelButton
+                onPressed={handleShow}
+                color={"#fff"}
+                name={"Register to invest"}
+              />
+            </div>
+            <div
+              style={{
+                borderBottom: "1px #5D4DC4 solid",
+                width: "95%",
+                position: "absolute",
+                bottom: "5%",
               }}
-              rightBtnOptions={{
-                path: "#whatwedo",
-                color: "#fff",
-                name: "what we do",
-              }}
-            />
+            ></div>
           </Container>
           <div
             style={{
@@ -108,7 +174,7 @@ function App() {
                 and knowledge to develop universal access to electricity.
               </p>
             </Col>
-            <Col sm className="service-item">
+            <Col sm className="service-item font-glyph">
               <img src={captureIcon} alt="image" />
               <p className="service-title">Energy Development Toolkits</p>
               <p className="service-sub">
@@ -117,7 +183,7 @@ function App() {
                 design.
               </p>
             </Col>
-            <Col sm className="service-item">
+            <Col sm className="service-item font-glyph">
               <img src={energyIcon} alt="image" />
               <p className="service-title">Reduce Energy Poverty</p>
               <p className="service-sub">
@@ -126,18 +192,30 @@ function App() {
               </p>
             </Col>
           </Row>
-          <ButtonGroup
-            leftBtnOptions={{
-              path: "/",
-              color: "#5D4DC4",
-              name: "Register to invest",
+          <div
+            className="buttonGrp"
+            style={{ marginTop: "1rem", marginBottom: "1rem" }}
+          >
+            <OelButton
+              path="#le1section"
+              color="#5D4DC4"
+              name="Our first product"
+              hideAnt={true}
+            />
+            <OelButton
+              onPressed={handleShow}
+              color={"#5D4DC4"}
+              name={"Register to invest"}
+            />
+          </div>
+          <div
+            style={{
+              borderBottom: "1px #5D4DC4 solid",
+              width: "95%",
+              position: "absolute",
+              bottom: "5%",
             }}
-            rightBtnOptions={{
-              path: "#le1section",
-              color: "#5D4DC4",
-              name: "Our first product",
-            }}
-          />
+          ></div>
         </section>
 
         {/* Introducing our first product */}
@@ -236,6 +314,7 @@ function App() {
 
         {/* partners */}
         <section
+          id="partners"
           className={"section"}
           style={{
             backgroundColor: "#FF7F48",
@@ -289,18 +368,30 @@ function App() {
             <Partners logos={[eps, uik, fik, bcv, eps]} />
             <Partners logos={[fik, uik, eps, bcv, eps]} />
             <div style={{ marginTop: 25 }}>
-              <ButtonGroup
-                leftBtnOptions={{
-                  path: "/",
-                  color: "#5D4DC4",
-                  name: "Register to invest",
+              <div
+                className="buttonGrp"
+                style={{ marginTop: "1rem", marginBottom: "1rem" }}
+              >
+                <OelButton
+                  path="mailto:hello@localelectricity.org"
+                  color="#5D4DC4"
+                  name="Partner with us"
+                  hideAnt={true}
+                />
+                <OelButton
+                  onPressed={handleShow}
+                  color={"#5D4DC4"}
+                  name={"Register to invest"}
+                />
+              </div>
+              {/* <div
+                style={{
+                  borderBottom: "1px #5D4DC4 solid",
+                  width: "95%",
+                  position: "absolute",
+                  bottom: "5%",
                 }}
-                rightBtnOptions={{
-                  path: "mailto:hello@localelectricity.org",
-                  color: "#5D4DC4",
-                  name: "Partner with us",
-                }}
-              />
+              ></div> */}
             </div>
           </Container>
         </section>

@@ -13,9 +13,10 @@ function Partners({ logos }) {
       }}
     >
       {logos &&
-        logos.map((logo) => {
+        logos.map((logo, index) => {
           return (
             <Col
+              key={index}
               sm
               style={{
                 marginBottom: 50,
@@ -23,7 +24,7 @@ function Partners({ logos }) {
                 flexGrow: 0,
                 justifyContent: "center",
                 alignItems: "center",
-                display:'flex'
+                display: "flex",
               }}
             >
               <img height={40} src={logo} />

@@ -4,7 +4,6 @@ import ButtonGroup from "./buttonGroup";
 import MailModal from "./modal";
 
 function Hero() {
-  const [modalShow, setModalShow] = useState(false);
   return (
     <div
       style={{
@@ -27,16 +26,11 @@ function Hero() {
         <OelButton name="What we do"></OelButton>
       </div> */}
 
-      {console.log(modalShow)}
-      <MailModal show={modalShow} onHide={() => {}} />
       <ButtonGroup
         leftBtnOptions={{
           path: "/",
           color: "#5D4DC4",
           name: "Register to invest",
-          onPressed: () => {
-            setModalShow(true);
-          },
         }}
         rightBtnOptions={{
           path: "#videosection",

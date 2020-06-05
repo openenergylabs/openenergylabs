@@ -1,8 +1,8 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 
-function OelButton({ name, color, path, onPressed }) {
-  const onButtonPressed = () => {
+function OelButton({ name, color, path, onPressed, hideAnt }) {
+  const onButtonPressed = (e) => {
     if (onPressed) {
       onPressed();
     }
@@ -22,25 +22,35 @@ function OelButton({ name, color, path, onPressed }) {
       <div
         style={{
           display: "flex",
+          visibility: hideAnt && "hidden",
           width: 50,
           justifyContent: "space-between",
         }}
       >
         <span
           className="oel-btn-antena"
-          style={{ ...buttonStyles.oelAntena, borderColor: color }}
+          style={{
+            ...buttonStyles.oelAntena,
+            borderColor: color,
+          }}
         ></span>
         <span
           className="oel-btn-antena"
-          style={{ ...buttonStyles.oelAntena, borderColor: color }}
+          style={{
+            ...buttonStyles.oelAntena,
+            borderColor: color,
+          }}
         ></span>
         <span
           className="oel-btn-antena"
-          style={{ ...buttonStyles.oelAntena, borderColor: color }}
+          style={{
+            ...buttonStyles.oelAntena,
+            borderColor: color,
+          }}
         ></span>
       </div>
       <Button
-        onClick={onButtonPressed}
+        onClick={onPressed}
         className="oelbtn"
         variant={"outline-primary"}
         style={{
