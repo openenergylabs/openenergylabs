@@ -49,7 +49,7 @@ function VideoSection() {
           <OelButton
             path="#whatwedo"
             color="#fff"
-            name="what we do"
+            name="What we do"
             hideAnt={true}
           />
           <OelButton
