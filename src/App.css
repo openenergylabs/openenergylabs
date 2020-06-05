@@ -26,6 +26,7 @@
 }
 
 /* What we do  */
+
 .section-title {
   position: relative;
   bottom: 2rem;
@@ -59,7 +60,7 @@
 .service-sub {
   text-align: center;
   color: #5d4dc4;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 /* Buttons group styles */
