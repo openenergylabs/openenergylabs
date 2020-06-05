@@ -8,6 +8,7 @@ import WhatWeDoSection from "./sections/whatwedo";
 import Le1Section from "./sections/le1section";
 import PartnersSection from "./sections/partners";
 import FooterSection from "./sections/footerSection";
+import Banner from "./components/banner";
 
 // TODO: Change favicon OEL
 
@@ -19,6 +20,7 @@ function App() {
   return (
     <Layout>
       <div className="App">
+        <Banner />
         <MailModal show={show} onHide={handleClose} />
         <Hero></Hero>
         <VideoSection />
