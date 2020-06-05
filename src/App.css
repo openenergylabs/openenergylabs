@@ -74,13 +74,28 @@
   background-color: #bcbec0 !important;
 }
 
-/* .oel-btn-antena {
-  height: 30px;
-  border-left: 1px solid black;
-  margin-right: 10px;
-  position: relative;
-  bottom: -2 !important;
-} */
+/* inverting colors */
+
+#hero .oelbtn:hover {
+  background-color: #5d4dc4 !important;
+  color: #fde3ca !important;
+}
+
+#videosection .oelbtn:hover {
+  background-color: #fff !important;
+  color: #5d4dc4 !important;
+}
+
+#whatwedo .oelbtn:hover {
+  background-color: #5d4dc4 !important;
+  color: #fea90e !important;
+}
+#le1section .oelbtn:hover {
+}
+#partners .oelbtn:hover {
+  background-color: #5d4dc4 !important;
+  color: #ff7f48 !important;
+}
 
 .oelbtn {
   width: 200px;
@@ -132,7 +147,7 @@
 
   /* crowd investment  */
   .crowd-vd {
-    width: 100%;
+    height: 500px;
   }
 
   /* Introducing our first product */
