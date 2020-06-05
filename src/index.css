@@ -10,7 +10,7 @@ body {
   font-feature-settings: "ss02", "ss09", "ss04", "ss11", "ss12", "ss13";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: aqua;
+  background-color: #fde3ca;
 }
 
 code {
@@ -20,7 +20,7 @@ code {
 
 /* LAYOUT */
 
-.lt-container { 
+.lt-container {
   display: flex;
   align-items: center;
   justify-content: center;
