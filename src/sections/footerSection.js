@@ -81,7 +81,9 @@ function FooterSection() {
               <p style={{ marginBottom: "1rem" }}>
                 &#169; Copyright {new Date().getFullYear()}, Open Energy Labs
               </p>
-              <p>32/6 Joseph Mwila Rd, Lusaka Zambia</p>
+              <p>
+                32/6 Joseph Mwila Rd <br /> Lusaka Zambia
+              </p>
             </div>
           </Col>
           <Col>
