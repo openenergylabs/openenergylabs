@@ -14,7 +14,7 @@ function FooterSection() {
       // className={"section"}
       style={{ backgroundColor: "#5D4DC4", width: "100%" }}
     >
-      <Container fluid>
+      <Container className={"content"} fluid>
         <Row>
           <Col
             className="footer-lft"

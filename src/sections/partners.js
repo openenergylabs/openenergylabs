@@ -26,6 +26,7 @@ function PartnersSection() {
     >
       <MailModal show={show} onHide={handleClose} />
       <Container
+        className="content"
         fluid
         style={{
           height: "100%",

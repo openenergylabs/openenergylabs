@@ -22,6 +22,7 @@ function Le1Section() {
     >
       <MailModal show={show} onHide={handleClose} />
       <Container
+        className="content"
         style={{
           height: "100%",
           ...common.centerItemsVt,

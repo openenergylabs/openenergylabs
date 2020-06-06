@@ -6,6 +6,10 @@
   height: 100%;
 }
 
+.content {
+  max-width: 1440px !important;
+}
+
 .sub-hdr-text {
   font-size: 28px;
   color: #5d4dc4;
