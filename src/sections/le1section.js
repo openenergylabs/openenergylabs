@@ -36,7 +36,7 @@ function Le1Section() {
           style={{
             height: "100%",
             display: "grid",
-            gridTemplateColumns: "700px auto",
+            gridTemplateColumns: "600px auto",
           }}
         >
           {/* left le1 image*/}

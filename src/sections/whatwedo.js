@@ -10,6 +10,7 @@ import MailModal from "../components/modal";
 import Wd1 from "../media/svgComponents/wd1";
 import Wd2 from "../media/svgComponents/wd2";
 import Wd3 from "../media/svgComponents/wd3";
+import DoubleArrow from "../media/svgComponents/doubleFacedArrow";
 
 function WhatWeDoSection() {
   const [show, setShow] = useState(false);
@@ -29,8 +30,8 @@ function WhatWeDoSection() {
         className="content"
         style={{
           ...common.centerItemsVt,
-          paddingTop: "10%",
-          paddingBottom: "10%",
+          paddingTop: "100px",
+          paddingBottom: "100px",
         }}
       >
         <MailModal show={show} onHide={handleClose} />
@@ -45,16 +46,40 @@ function WhatWeDoSection() {
               electricity.
             </p>
           </Col>
+          <Col
+            style={{
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column",
+              maxWidth: "20px",
+              color: "#5d4dc4",
+              paddingTop: 50,
+            }}
+          >
+            <DoubleArrow />
+          </Col>
           <Col sm className="service-item font-glyph">
-            <Wd3 />
+            <Wd1 />
             <p className="service-title">Energy Development Toolkits</p>
             <p className="service-sub">
               Our mobile learning platform and integrated hardware demystifies
               energy systems, and offers powerful capabilities for their design.
             </p>
           </Col>
+          <Col
+            style={{
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column",
+              maxWidth: "20px",
+              paddingTop: 50,
+              color: "#5d4dc4",
+            }}
+          >
+            <DoubleArrow />
+          </Col>
           <Col sm className="service-item font-glyph">
-            <Wd1 />
+            <Wd3 />
             <p className="service-title">Reduce Energy Poverty</p>
             <p className="service-sub">
               We empower and inspire people and communities to innovate towards
@@ -62,10 +87,7 @@ function WhatWeDoSection() {
             </p>
           </Col>
         </Row>
-        <div
-          className="buttonGrp"
-          style={{ marginTop: "1rem", marginBottom: "1rem" }}
-        >
+        <div className="buttonGrp" style={{ marginBottom: "1rem" }}>
           <OelButton
             path="#le1section"
             color="#5D4DC4"

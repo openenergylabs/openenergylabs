@@ -32,8 +32,7 @@
 /* What we do  */
 
 .section-title {
-  position: relative;
-  bottom: 2rem;
+  margin-bottom: 100px;
   color: #5d4dc4;
   font-size: 3em;
 }
@@ -59,6 +58,7 @@
   /* text-transform: uppercase; */
   font-size: 24px;
   color: #5d4dc4;
+  margin: 10px;
 }
 
 .service-sub {
@@ -73,7 +73,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 2rem !important;
+  margin-top: 100px !important;
 }
 .oelbtn:hover {
   background-color: #bcbec0 !important;
