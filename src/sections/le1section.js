@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import common from "../styles/styles";
 import MailModal from "../components/modal";
 import Le1 from "../media/svgComponents/Le1";
+import Arrow from "../media/svgComponents/Le1Arrow";
 
 function Le1Section() {
   const [show, setShow] = useState(false);
@@ -31,38 +32,38 @@ function Le1Section() {
         <h3 className="font-glyph" style={{ margin: "5%", fontSize: "50px" }}>
           The world’s first learnable charge controller
         </h3>
-        <Row
+        <div
           style={{
             height: "100%",
+            display: "grid",
+            gridTemplateColumns: "60% 40%",
           }}
         >
-          <Col
+          {/* left le1 image*/}
+          <div
             style={{
               position: "relative",
             }}
-            sm
-            lg={7}
           >
-            {/* <img
-              style={{
-                maxWidth: "100%",
-                height: "100%",
-                position: "absolute",
-                bottom: 0,
-              }}
-              src={le1}
-            /> */}
-
-            <Le1 style={{ width: "100%" }} />
-          </Col>
-          <Col
+            <div>
+              <Le1
+                style={{
+                  maxWidth: "100%",
+                  width: "100%",
+                  height: "40%",
+                }}
+              />
+            </div>
+          </div>
+          {/* right intro text  */}
+          <div
             id="le1-intro-col2"
-            sm
             style={{
               display: "flex",
               alignItems: "center",
               flexDirection: "column",
               position: "relative",
+              marginTop: 50,
             }}
           >
             <div
@@ -83,24 +84,25 @@ function Le1Section() {
                 lighting and mobile-phone charging
               </p>
             </div>
+            <Arrow />
             <a href="#videosection">
               <button
                 style={{
                   borderStyle: "none",
-                  borderRadius: 70,
-                  width: 120,
-                  height: 120,
+                  borderRadius: 100,
+                  width: 200,
+                  height: 200,
                   border: "1px solid #6CCDF2",
                   background: "none",
                   color: "#6CCDF2",
-                  margin: 30,
+                  margin: 0,
                 }}
               >
                 See Le1 in action
               </button>
             </a>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </Container>
     </section>
   );

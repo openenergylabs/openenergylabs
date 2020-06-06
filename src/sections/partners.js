@@ -50,7 +50,7 @@ function PartnersSection() {
             style={{
               textAlign: "center",
               color: "#5D4DC4",
-              fontSize: "64px",
+              fontSize: "50px",
             }}
           >
             Our partners & investors
