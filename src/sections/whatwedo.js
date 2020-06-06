@@ -78,14 +78,6 @@ function WhatWeDoSection() {
             name={"Register to invest"}
           />
         </div>
-        <div
-          style={{
-            borderBottom: "1px #5D4DC4 solid",
-            width: "95%",
-            position: "absolute",
-            bottom: "5%",
-          }}
-        ></div>
       </div>
     </section>
   );
