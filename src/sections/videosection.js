@@ -34,9 +34,11 @@ function VideoSection() {
       >
         <MailModal show={show} onHide={handleClose} />
 
-        <h2 style={{ color: "#FDE3CA", marginBottom: "50px", fontSize: 50 }}>
+        <h3
+          style={{ color: "#FDE3CA", marginBottom: "50px", fontSize: "50px" }}
+        >
           We’re raising investment soon on Crowdcubecle
-        </h2>
+        </h3>
 
         <div
           style={{
