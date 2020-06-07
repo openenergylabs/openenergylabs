@@ -3,7 +3,7 @@ import * as React from "react";
 function Wd1(props) {
   return (
     <svg
-      width={"auto"}
+      width
       height={100}
       viewBox="0 0 513 511"
       fill="none"

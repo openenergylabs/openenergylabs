@@ -2,7 +2,7 @@ import * as React from "react";
 
 function Wd3(props) {
   return (
-    <svg width={512} height={100} viewBox="0 0 512 511" fill="none" {...props}>
+    <svg width height={100} viewBox="0 0 512 511" fill="none" {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"

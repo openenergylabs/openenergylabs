@@ -40,7 +40,7 @@ function Hero() {
 
         <div
           className="buttonGrp"
-          style={{ marginTop: "1rem", marginBottom: "1rem" }}
+          style={{ marginTop: "1rem", marginBottom: "1rem", marginTop: 30 }}
         >
           <OelButton
             path="#videosection"

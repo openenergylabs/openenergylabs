@@ -46,11 +46,11 @@ function PartnersSection() {
           }}
         >
           <h3
-            className="font-glyph"
+            className="section-title"
             style={{
               textAlign: "center",
               color: "#5D4DC4",
-              fontSize: "50px",
+              marginBottom: 10,
             }}
           >
             Our partners & investors
@@ -67,34 +67,45 @@ function PartnersSection() {
             development and impact investing.
           </p>
         </div>
-        <Partners logos={[eps, fik, uik, bcv, eps]} />
-        <Partners logos={[eps, uik, fik, bcv, eps]} />
-        <Partners logos={[fik, uik, eps, bcv, eps]} />
-        <div style={{ marginTop: 25 }}>
-          <div
-            className="buttonGrp"
-            style={{ marginTop: "1rem", marginBottom: "1rem" }}
-          >
-            <OelButton
-              path="mailto:hello@localelectricity.org"
-              color="#5D4DC4"
-              name="Partner with us"
-              hideAnt={true}
-            />
-            <OelButton
-              onPressed={handleShow}
-              color={"#5D4DC4"}
-              name={"Register to invest"}
-            />
-          </div>
-          {/* <div
-          style={{
-            borderBottom: "1px #5D4DC4 solid",
-            width: "95%",
-            position: "absolute",
-            bottom: "5%",
-          }}
-        ></div> */}
+        <Partners
+          logos={[
+            eps,
+            fik,
+            uik,
+            bcv,
+            eps,
+            eps,
+            uik,
+            fik,
+            bcv,
+            eps,
+            eps,
+            fik,
+            uik,
+            bcv,
+            eps,
+            eps,
+            uik,
+            fik,
+            bcv,
+            eps,
+          ]}
+        />
+        <div
+          className="buttonGrp"
+          style={{ marginTop: "1rem", marginBottom: "1rem" }}
+        >
+          <OelButton
+            path="mailto:hello@localelectricity.org"
+            color="#5D4DC4"
+            name="Partner with us"
+            hideAnt={true}
+          />
+          <OelButton
+            onPressed={handleShow}
+            color={"#5D4DC4"}
+            name={"Register to invest"}
+          />
         </div>
       </Container>
     </section>

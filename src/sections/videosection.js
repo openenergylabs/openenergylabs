@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Vimeo from "@u-wave/react-vimeo";
 import MailModal from "../components/modal";
 import OelButton from "../components/button";
+import ReactPlayer from "react-player";
 
 function VideoSection() {
   const [show, setShow] = useState(false);
@@ -35,21 +36,25 @@ function VideoSection() {
         <MailModal show={show} onHide={handleClose} />
 
         <h3
-          style={{ color: "#FDE3CA", marginBottom: "50px", fontSize: "50px" }}
+          id="video-section-title"
+          className="section-title"
+          style={{ color: "#FDE3CA", marginBottom: "50px" }}
         >
           We’re raising investment soon on Crowdcubecle
         </h3>
 
         <div
+          id="videoJourneyWrapper"
           style={{
             display: "grid",
-            gridTemplateColumns: "50% 50%",
+            gridTemplateColumns: "repeat( auto-fit, minmax(300px, 1fr) )",
             // backgroundColor: "#ff3",
             width: "80%",
-            // justifyItems: "center",
+            justifyItems: "center",
           }}
         >
           <div
+            id="journey-vid-sect"
             style={{
               width: "70%",
               display: "flex",
@@ -67,14 +72,13 @@ function VideoSection() {
               deliver our programme to 110,000 students in Zambia.
             </p>
             <p>
-              {" "}
               We are already backed by Innovate UK and the Zambian National
               Science and Technology Council and we are now giving you the
               chance to join us on our journey, as we support young people in
               Africa to build the renewable energy systems of the future
             </p>
 
-            <div style={{ marginTop: "30px" }}>
+            <div id="button1-vid-sect" style={{ marginTop: "30px" }}>
               <OelButton
                 onPressed={handleShow}
                 color={"#fde3ca"}
@@ -83,6 +87,7 @@ function VideoSection() {
             </div>
           </div>
           <div
+            id="video-vid-sect"
             style={{
               width: "100%",
               display: "flex",
@@ -93,10 +98,15 @@ function VideoSection() {
           >
             <p style={{ fontSize: "20px" }}>Watch our campaign video</p>
             <p style={{ fontSize: "20px", margin: 20 }}>↓</p>
-            <Vimeo width={450} video="https://vimeo.com/425909940" />
+            {/* <Vimeo video="https://vimeo.com/425909940" /> */}
+            <ReactPlayer
+              width="100%"
+              height="50%"
+              url="https://vimeo.com/426770187"
+            />
           </div>
         </div>
-        <div style={{ margin: "60px", marginLeft: "100px" }}>
+        <div id="button2-vid-sect">
           <OelButton
             path="#whatwedo"
             color="#fde3ca"
@@ -109,7 +119,7 @@ function VideoSection() {
             borderBottom: "1px #fde3ca solid",
             width: "95%",
             position: "absolute",
-            bottom: "5%",
+            bottom: "50px",
           }}
         ></div>
       </div>

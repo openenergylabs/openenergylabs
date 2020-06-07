@@ -5,19 +5,22 @@ import Col from "react-bootstrap/Col";
 
 function Partners({ logos }) {
   return (
-    <Row
+    <div
+      id="partnerLogos"
       style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
         width: "100%",
         marginTop: "3rem",
-        justifyContent: "space-between",
+        // justifyItems: "start",
+        gridGap: 20,
       }}
     >
       {logos &&
         logos.map((logo, index) => {
           return (
-            <Col
+            <div
               key={index}
-              sm
               style={{
                 marginBottom: 50,
                 width: "100%",
@@ -28,10 +31,10 @@ function Partners({ logos }) {
               }}
             >
               <img height={40} src={logo} />
-            </Col>
+            </div>
           );
         })}
-    </Row>
+    </div>
   );
 }
 

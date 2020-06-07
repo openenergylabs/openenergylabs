@@ -36,8 +36,8 @@ function WhatWeDoSection() {
       >
         <MailModal show={show} onHide={handleClose} />
         <h3 className="section-title font-glyph">What we do</h3>
-        <Row className={"services"}>
-          <Col sm className="service-item">
+        <div className={"services"}>
+          <div className="service-item">
             <Wd2 />
             <p className="service-title font-glyph">Energy Makers Academy</p>
             <p className="service-sub">
@@ -45,8 +45,9 @@ function WhatWeDoSection() {
               them with the skills and knowledge to develop universal access to
               electricity.
             </p>
-          </Col>
-          <Col
+          </div>
+          <div
+            className="arrow-wwd-sec"
             style={{
               display: "flex",
               alignItems: "center",
@@ -57,16 +58,17 @@ function WhatWeDoSection() {
             }}
           >
             <DoubleArrow />
-          </Col>
-          <Col sm className="service-item font-glyph">
+          </div>
+          <div className="service-item font-glyph">
             <Wd1 />
             <p className="service-title">Energy Development Toolkits</p>
             <p className="service-sub">
               Our mobile learning platform and integrated hardware demystifies
               energy systems, and offers powerful capabilities for their design.
             </p>
-          </Col>
-          <Col
+          </div>
+          <div
+            className="arrow-wwd-sec"
             style={{
               display: "flex",
               alignItems: "center",
@@ -77,16 +79,16 @@ function WhatWeDoSection() {
             }}
           >
             <DoubleArrow />
-          </Col>
-          <Col sm className="service-item font-glyph">
+          </div>
+          <div lg={12} sm className="service-item font-glyph">
             <Wd3 />
             <p className="service-title">Reduce Energy Poverty</p>
             <p className="service-sub">
               We empower and inspire people and communities to innovate towards
               affordable, reliable and sustainable energy systems.
             </p>
-          </Col>
-        </Row>
+          </div>
+        </div>
         <div className="buttonGrp" style={{ marginBottom: "1rem" }}>
           <OelButton
             path="#le1section"
