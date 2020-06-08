@@ -66,16 +66,20 @@ function VideoSection() {
             <p style={{ fontSize: "20px" }}>Join us on our journey </p>
             <p style={{ fontSize: "20px", margin: 20 }}>↓</p>
             <p style={{ textAlign: "justify" }}>
-              Teaching students in Africa how to build renewable electricity
-              supplies, Open Energy Labs is an EdTech company with a purpose. We
-              are raising investment on crowdcube to develop technology and
-              deliver our programme to 110,000 students in Zambia.
+              Open Energy Labs is an EdTech company with a purpose: Teaching
+              students in Africa how to build renewable electricity supplies. We
+              are already backed by both Innovate UK and the Zambian National
+              Science and Technology Council. 
             </p>
             <p>
-              We are already backed by Innovate UK and the Zambian National
-              Science and Technology Council and we are now giving you the
-              chance to join us on our journey, as we support young people in
-              Africa to build the renewable energy systems of the future
+              To develop technology and deliver our programme to 110,000
+              students in Zambia, we are about to open a crowd investment round.
+            </p>
+            <p>
+              You will have the chance to join us on our journey as we support
+              young people in Africa to build the renewable energy systems of
+              the future. Register below for info, updates and an exclusive
+              early-access link to our campaign when it is live.
             </p>
 
             <div id="button1-vid-sect" style={{ marginTop: "30px" }}>
