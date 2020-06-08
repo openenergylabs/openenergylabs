@@ -11,7 +11,7 @@ function Partners({ logos }) {
         display: "grid",
         gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
         width: "100%",
-        marginTop: "3rem",
+        marginTop: "2rem",
         // justifyItems: "start",
         gridGap: 20,
       }}
