@@ -2,7 +2,7 @@ import * as React from "react";
 
 function Mch(props) {
   return (
-    <svg width={116} height={115} viewBox="0 0 116 115" fill="none" {...props}>
+    <svg width={""} height={100} viewBox="0 0 116 115" fill="none" {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"

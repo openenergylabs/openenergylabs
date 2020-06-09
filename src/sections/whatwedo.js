@@ -7,6 +7,7 @@ import Wd2 from "../media/svgComponents/wd2";
 import Wd3 from "../media/svgComponents/wd3";
 import DoubleArrow from "../media/svgComponents/doubleFacedArrow";
 import Pip from "../media/svgComponents/people";
+import Mch from "../media/svgComponents/machine";
 
 function WhatWeDoSection() {
   const [show, setShow] = useState(false);
@@ -56,7 +57,7 @@ function WhatWeDoSection() {
             <DoubleArrow />
           </div>
           <div className="service-item font-glyph">
-            <Wd1 />
+            <Mch />
             <p className="service-title">Energy Development Toolkits</p>
             <p className="service-sub">
               Our mobile learning platform and integrated hardware demystifies

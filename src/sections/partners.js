@@ -11,8 +11,8 @@ import gcrf from "../media/gcrf.png";
 import fiuk from "../media/fiuk.png";
 import bgv from "../media/bgv.png";
 import mh from "../media/mh.png";
-import moe from "../media/moe.png";
-import mohe from "../media/mohe.png";
+import moe from "../media/MoE.png";
+import mohe from "../media/MoHE.png";
 import hg from "../media/hg.png";
 import ukid from "../media/ukid.png";
 import ukri from "../media/ukri.png";
@@ -92,18 +92,42 @@ function PartnersSection() {
         //   dfid,
         // ]}
         >
-          <img style={{ width: "auto", height: 50 }} src={epsrc} />
-          <img style={{ width: "auto", height: 40 }} src={fiuk} />
-          <img style={{ width: "auto", height: 40 }} src={ukri} />
-          <img style={{ width: "auto", height: 50 }} src={bgv} />
-          <img style={{ width: "auto", height: 50 }} src={gcrf} />
-          <img style={{ width: "auto", height: 50 }} src={ukid} />
-          <img style={{ width: "auto", height: 50 }} src={vs} />
-          <img style={{ width: "auto", height: 50 }} src={moe} />
-          <img style={{ width: "auto", height: 40 }} src={mh} />
-          <img style={{ width: "auto", height: 80 }} src={hg} />
-          <img style={{ width: "auto", height: 50 }} src={mohe} />
-          <img style={{ width: "auto", height: 50 }} src={dfid} />
+          <a href="https://epsrc.ukri.org/">
+            <img style={{ width: "auto", height: 50 }} src={epsrc} />
+          </a>
+          <a href="https://www.gov.uk/government/organisations/innovate-uk">
+            <img style={{ width: "auto", height: 40 }} src={fiuk} />
+          </a>
+          <a href="http://ukri.org/">
+            <img style={{ width: "auto", height: 40 }} src={ukri} />
+          </a>
+          <a href="https://bethnalgreenventures.com/">
+            <img style={{ width: "auto", height: 50 }} src={bgv} />
+          </a>
+          <a href="https://www.ukri.org/research/global-challenges-research-fund/">
+            <img style={{ width: "auto", height: 50 }} src={gcrf} />
+          </a>
+          <a href="https://www.ukaiddirect.org/">
+            <img style={{ width: "auto", height: 50 }} src={ukid} />
+          </a>
+          <a href="https://www.virginstartup.org/">
+            <img style={{ width: "auto", height: 50 }} src={vs} />
+          </a>
+          <a href="#">
+            <img style={{ width: "auto", height: 80 }} src={moe} />
+          </a>
+          <a href="#">
+            <img style={{ width: "auto", height: 40 }} src={mh} />
+          </a>
+          <a href="#">
+            <img style={{ width: "auto", height: 80 }} src={hg} />
+          </a>
+          <a href="#">
+            <img style={{ width: "auto", height: 80 }} src={mohe} />
+          </a>
+          <a href="https://www.gov.uk/government/organisations/department-for-international-development">
+            <img style={{ width: "auto", height: 50 }} src={dfid} />
+          </a>
         </Partners>
         <div
           className="buttonGrp"
