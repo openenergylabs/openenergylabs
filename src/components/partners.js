@@ -3,35 +3,42 @@ import common from "../styles/styles";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-function Partners({ logos }) {
+function Partners({ children }) {
   return (
-    <Row
+    <div
+      id="partnerLogos"
       style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
         width: "100%",
-        marginTop: "3rem",
-        justifyContent: "space-between",
+        maxWidth: "1118px",
+        marginTop: "2rem",
+        justifyItems: "start",
+        alignItems: "center",
+        // columnGap: 20,
+        gridGap: 50,
       }}
     >
-      {logos &&
+      {/* {logos &&
         logos.map((logo, index) => {
           return (
-            <Col
+            <div
               key={index}
-              sm
               style={{
-                marginBottom: 50,
-                width: "100%",
-                flexGrow: 0,
-                justifyContent: "center",
-                alignItems: "center",
-                display: "flex",
+                margin: 5,
+                // flexGrow: 0,
+                // justifyContent: "center",
+                // alignItems: "center",
+                // display: "flex",
               }}
             >
-              <img height={40} src={logo} />
-            </Col>
+              <img width="auto" height={"auto"} src={logo} />
+            </div>
           );
-        })}
-    </Row>
+        })} */}
+
+      {children}
+    </div>
   );
 }
 

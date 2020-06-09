@@ -4,6 +4,8 @@ import Container from "react-bootstrap/Container";
 import Vimeo from "@u-wave/react-vimeo";
 import MailModal from "../components/modal";
 import OelButton from "../components/button";
+import ReactPlayer from "react-player";
+import VimeoVideo from "../components/vimeoemb";
 
 function VideoSection() {
   const [show, setShow] = useState(false);
@@ -19,62 +21,105 @@ function VideoSection() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
-        position: "relative",
       }}
     >
-      <MailModal show={show} onHide={handleClose} />
-      <Container
+      <div
+        className="content"
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          height: "100%",
-          width: "100%",
           position: "relative",
-          padding: "5%",
+          padding: "50px",
         }}
       >
-        <p style={{ alignSelf: "flex-end", color: "#fde3ca" }}>
-          Watch our Crowdcube campaign video
-        </p>
+        <MailModal show={show} onHide={handleClose} />
 
-        <Vimeo height={500} video="https://vimeo.com/425909940" />
+        <h3
+          id="video-section-title"
+          className="section-title"
+          style={{ color: "#FDE3CA", marginBottom: "50px" }}
+        >
+          We’re raising investment soon on Crowdcubecle
+        </h3>
 
         <div
-          className="buttonGrp"
-          style={{ marginTop: "3rem", marginBottom: "1rem" }}
+          id="videoJourneyWrapper"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat( auto-fit, minmax(300px, 1fr) )",
+            // backgroundColor: "#ff3",
+            width: "80%",
+            justifyItems: "center",
+          }}
         >
-          <OelButton
-            path="#whatwedo"
-            color="#fde3ca"
-            name="What we do"
-            hideAnt={true}
-          />
-          <OelButton
-            onPressed={handleShow}
-            color={"#fde3ca"}
-            name={"Register to invest"}
-          />
+          <div
+            id="journey-vid-sect"
+            style={{
+              width: "70%",
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column",
+              color: "#FDE3CA",
+            }}
+          >
+            <p style={{ fontSize: "20px" }}>Join us on our journey </p>
+            <p style={{ fontSize: "20px", margin: 20 }}>↓</p>
+            <p style={{ textAlign: "justify" }}>
+              Open Energy Labs is an EdTech company with a purpose: Teaching
+              students in Africa how to build renewable electricity supplies. We
+              are already backed by both Innovate UK and the Zambian National
+              Science and Technology Council. 
+            </p>
+            <p>
+              To develop technology and deliver our programme to 110,000
+              students in Zambia, we are about to open a crowd investment round.
+            </p>
+            <p>
+              You will have the chance to join us on our journey as we support
+              young people in Africa to build the renewable energy systems of
+              the future. Register below for info, updates and an exclusive
+              early-access link to our campaign when it is live.
+            </p>
+
+            <div
+              id="button1-vid-sect"
+              style={{ marginTop: "30px", marginBottom: "50px" }}
+            >
+              <OelButton
+                onPressed={handleShow}
+                color={"#fde3ca"}
+                name={"Register to invest"}
+              />
+            </div>
+          </div>
+          <div
+            id="video-vid-sect"
+            style={{
+              width: "100%",
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column",
+              color: "#FDE3CA",
+            }}
+          >
+            <p style={{ fontSize: "20px" }}>Watch our campaign video</p>
+            <p style={{ fontSize: "20px", margin: 20 }}>↓</p>
+            <div style={{ width: "100%", position: "relative" }}>
+              <VimeoVideo />
+            </div>
+          </div>
         </div>
         <div
           style={{
-            borderBottom: "1px #5D4DC4 solid",
+            borderBottom: "1px #fde3ca solid",
             width: "95%",
             position: "absolute",
-            bottom: "5%",
+            bottom: "50px",
           }}
         ></div>
-      </Container>
-      <div
-        style={{
-          borderBottom: "1px #fde3ca solid",
-          width: "95%",
-          position: "absolute",
-          bottom: "5%",
-        }}
-      ></div>
+      </div>
     </section>
   );
 }

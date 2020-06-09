@@ -16,7 +16,8 @@
     "react-mailchimp-form": "^1.0.2",
     "react-mailchimp-subscribe": "^2.1.0",
     "react-player": "^2.1.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "file-loader": "^6.0.0",
     "gh-pages": "^3.0.0"
   }
 }

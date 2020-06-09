@@ -3,7 +3,12 @@
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
+}
+
+.content {
+  max-width: 1440px !important;
+  width: 100%;
 }
 
 .sub-hdr-text {
@@ -28,10 +33,10 @@
 /* What we do  */
 
 .section-title {
-  position: relative;
-  bottom: 2rem;
+  margin-bottom: 100px;
   color: #5d4dc4;
-  font-size: 3em;
+  font-size: 50px;
+  text-align: center;
 }
 
 .service-item img {
@@ -48,13 +53,17 @@
   text-align: center;
 }
 .services {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 100%;
   justify-content: space-evenly;
 }
+
 .service-title {
   /* text-transform: uppercase; */
   font-size: 24px;
   color: #5d4dc4;
+  margin: 10px;
 }
 
 .service-sub {
@@ -65,11 +74,16 @@
 
 /* Buttons group styles */
 .buttonGrp {
-  width: 50rem;
+  width: 50%;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 2rem !important;
+  margin-top: 100px;
+}
+
+.buttonGrp > * {
+  margin: 20px;
 }
 .oelbtn:hover {
   background-color: #bcbec0 !important;
@@ -83,7 +97,7 @@
 }
 
 #videosection .oelbtn:hover {
-  background-color: #fff !important;
+  background-color: #fde3ca !important;
   color: #5d4dc4 !important;
 }
 
@@ -95,7 +109,7 @@
 }
 #partners .oelbtn:hover {
   background-color: #5d4dc4 !important;
-  color: #ff7f48 !important;
+  color: #fde3ca !important;
 }
 
 .oelbtn {
@@ -121,8 +135,14 @@
   color: #fff !important;
 }
 
+#button2-vid-sect {
+  margin: 50px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  /* Hero section */
+
   .oelbtn {
     width: 150px;
   }
@@ -142,13 +162,19 @@
   }
 
   /* Buttons group styles */
-  .buttonGrp {
-    width: 100%;
+  .buttonGrp > * {
+    margin: 10px;
+    width: 100% !important;
   }
-
-  /* crowd investment  */
-  .crowd-vd {
-    height: 500px;
+  .buttonGrp {
+    margin-top: 0px !important;
+    /* flex-direction: column-reverse; */
+  }
+  .buttonGrp:nth-child(1) {
+    order: 2;
+  }
+  .buttonGrp:nth-child(2) {
+    order: 1;
   }
 
   /* Introducing our first product */
@@ -161,7 +187,9 @@
     position: relative;
     bottom: 0rem;
     color: #5d4dc4;
-    font-size: 2em;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
   }
 
   .service-item {
@@ -169,14 +197,91 @@
   }
 
   .hdr-text {
-    font-size: 2.5em;
+    font-size: 3em;
     text-align: center;
+    margin: 10px;
   }
 
   .sub-hdr-text {
     font-size: 1em;
+    text-align: center;
+    margin: 10px;
   }
   .section {
     height: 100%;
+  }
+
+  /* video section */
+  #button1-vid-sect {
+    margin-bottom: 70px !important;
+  }
+  #button2-vid-sect {
+    margin-bottom: 70px !important;
+    margin-top: 0px;
+  }
+  #video-section-title {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+  }
+
+  #videosection .content {
+    padding: 0px !important;
+  }
+
+  #journey-vid-sect {
+    order: 2;
+  }
+  #video-vid-sect {
+    order: 1;
+  }
+
+  #videoFrame {
+    /* width: 500px !important; */
+  }
+
+  /* what we do section */
+  .arrow-wwd-sec {
+  }
+
+  #whatwedo .content {
+    padding: 30px !important;
+  }
+
+  /* partners */
+  #partnerLogos {
+    padding: 20px;
+    gap: 15px !important;
+  }
+
+  #partnerLogos img {
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* what we do section */
+  .arrow-wwd-sec {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  /* what we do section */
+
+  /* video section  */
+
+  #videoJourneyWrapper {
+    width: 100% !important;
+  }
+
+  #journey-vid-sect {
+    width: 80% !important;
+    /* grid-column-start: 2;
+    grid-column-end: 3; */
+  }
+
+  /* Le1 */
+  #le1section {
+    display: none;
   }
 }

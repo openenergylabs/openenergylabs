@@ -14,7 +14,7 @@ function FooterSection() {
       // className={"section"}
       style={{ backgroundColor: "#5D4DC4", width: "100%" }}
     >
-      <Container fluid>
+      <Container className={"content"} fluid>
         <Row>
           <Col
             className="footer-lft"
@@ -41,7 +41,7 @@ function FooterSection() {
                 }}
               >
                 <div id="usef-links">
-                  <a href="https://facebook.com/localelectricity">
+                  <a href="https://facebook.com/openenergylabs">
                     {" "}
                     <p>&#8599; Facebook</p>
                   </a>
@@ -49,20 +49,24 @@ function FooterSection() {
                     {" "}
                     <p>&#8599; Twitter</p>
                   </a>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/company/openenergylabs/">
                     {" "}
                     <p>&#8599; LinkedIn</p>
                   </a>
-                  <a href="#">
+                  <a href="https://www.youtube.com/channel/UCIlPJfPOl-9aHnESa_MxBPg">
                     {" "}
                     <p>&#8599; Youtube</p>
+                  </a>
+                  <a href="https://www.instagram.com/openenergylabs/">
+                    {" "}
+                    <p>&#8599; Instagram</p>
                   </a>
                 </div>
 
                 <div>
                   <a
                     style={{ color: "#fff", textDecoration: "underline" }}
-                    href={"mailto:hello@localelectricity.org"}
+                    href={"mailto:hello@openenergylabs.co"}
                   >
                     Contact Us{" "}
                   </a>
@@ -81,7 +85,9 @@ function FooterSection() {
               <p style={{ marginBottom: "1rem" }}>
                 &#169; Copyright {new Date().getFullYear()}, Open Energy Labs
               </p>
-              <p>32/6 Joseph Mwila Rd, Lusaka Zambia</p>
+              <p>
+                32/6 Joseph Mwila Rd <br /> Lusaka Zambia
+              </p>
             </div>
           </Col>
           <Col>
