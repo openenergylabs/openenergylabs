@@ -111,14 +111,6 @@ function VideoSection() {
             </div>
           </div>
         </div>
-        {/* <div id="button2-vid-sect">
-          <OelButton
-            path="#whatwedo"
-            color="#fde3ca"
-            name="What we do"
-            hideAnt={true}
-          />
-        </div> */}
         <div
           style={{
             borderBottom: "1px #fde3ca solid",

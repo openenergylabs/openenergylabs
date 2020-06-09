@@ -235,6 +235,10 @@
     order: 1;
   }
 
+  #videoFrame {
+    /* width: 500px !important; */
+  }
+
   /* what we do section */
   .arrow-wwd-sec {
   }
