@@ -78,7 +78,7 @@ function FooterSection() {
               id="ft-copyright"
               style={{
                 position: "absolute",
-                bottom: "1%",
+                bottom: "3%",
                 color: "#fff",
               }}
             >
@@ -86,7 +86,7 @@ function FooterSection() {
                 &#169; Copyright {new Date().getFullYear()}, Open Energy Labs
               </p>
               <p>
-                32/6 Joseph Mwila Rd <br /> Lusaka Zambia
+                32/6 Joseph Mwilwa Rd <br /> Lusaka Zambia
               </p>
             </div>
           </Col>
