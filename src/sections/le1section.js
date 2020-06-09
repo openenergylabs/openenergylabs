@@ -81,7 +81,7 @@ function Le1Section() {
               <p>
                 The Le1 gives students hands-on experience of building a
                 renewable electricity supply, able to provide reliable power for
-                lighting and mobile-phone charging
+                lighting and mobile-phone charging.
               </p>
             </div>
             <Arrow />
