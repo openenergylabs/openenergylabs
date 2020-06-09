@@ -22,6 +22,7 @@ function Hero() {
       <div
         className="content"
         style={{
+          maxHeight: "900px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
