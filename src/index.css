@@ -1,7 +1,9 @@
 @font-face {
-  font-family: "Gellix";
-  src: local("Gellix"), url("./fonts/Gellix-Regular.woff2"),
+  font-family: "Gellix Regular";
+  src: local("Gellix Regular"), url("./fonts/Gellix-Regular.woff2"),
     url("./fonts/Gellix-Regular.woff"), url("./fonts/Gellix-Regular.ttf");
+  src: local("Gellix Medium"), url("./fonts/Gellix-Medium.woff2"),
+    url("./fonts/Gellix-Medium.woff");
 }
 
 html {
@@ -11,7 +13,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Gellix";
+  font-family: "Gellix Regular";
   font-feature-settings: "ss02", "ss09", "ss04", "ss11", "ss12", "ss13";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
