@@ -41,7 +41,7 @@ function VideoSection() {
           className="section-title"
           style={{ color: "#FDE3CA", marginBottom: "50px" }}
         >
-          We’re raising investment soon on Crowdcubecle
+          We’re raising investment soon on Crowdcube
         </h3>
 
         <div
@@ -72,15 +72,15 @@ function VideoSection() {
               are already backed by both Innovate UK and the Zambian National
               Science and Technology Council. 
             </p>
-            <p>
+            <p style={{ textAlign: "justify" }}>
               To develop technology and deliver our programme to 110,000
               students in Zambia, we are about to open a crowd investment round.
             </p>
-            <p>
-              You will have the chance to join us on our journey as we support
-              young people in Africa to build the renewable energy systems of
-              the future. Register below for info, updates and an exclusive
-              early-access link to our campaign when it is live.
+            <p style={{ textAlign: "justify" }}>
+              Register below for info, updates and an exclusive early-access
+              link to our campaign when it is live. You will have the chance 
+              to join us on our journey as we support young people in Africa 
+              to build the renewable energy systems of the future.
             </p>
 
             <div
@@ -111,14 +111,6 @@ function VideoSection() {
             </div>
           </div>
         </div>
-        <div
-          style={{
-            borderBottom: "1px #fde3ca solid",
-            width: "95%",
-            position: "absolute",
-            bottom: "50px",
-          }}
-        ></div>
       </div>
     </section>
   );
