@@ -2,13 +2,7 @@ import * as React from "react";
 
 function Wd1(props) {
   return (
-    <svg
-      width
-      height={100}
-      viewBox="0 0 513 511"
-      fill="none"
-      {...props}
-    >
+    <svg width={""} height={100} viewBox="0 0 513 511" fill="none" {...props}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"

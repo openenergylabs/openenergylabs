@@ -1,13 +1,22 @@
 import React, { useState } from "react";
 import OelButton from "../components/button";
 import Container from "react-bootstrap/Container";
-// partners logos
-import bcv from "../media/bcv.png";
-import eps from "../media/eps.png";
-import fik from "../media/fik.png";
-import uik from "../media/uik.png";
 import Partners from "../components/partners";
 import MailModal from "../components/modal";
+
+// partners logos
+import dfid from "../media/dfid.png";
+import epsrc from "../media/epsrc.png";
+import gcrf from "../media/gcrf.png";
+import fiuk from "../media/fiuk.png";
+import bgv from "../media/bgv.png";
+import mh from "../media/mh.png";
+import moe from "../media/moe.png";
+import mohe from "../media/mohe.png";
+import hg from "../media/hg.png";
+import ukid from "../media/ukid.png";
+import ukri from "../media/ukri.png";
+import vs from "../media/vs.png";
 
 function PartnersSection() {
   const [show, setShow] = useState(false);
@@ -18,7 +27,7 @@ function PartnersSection() {
       id="partners"
       className={"section"}
       style={{
-        backgroundColor: "#FF7F48",
+        backgroundColor: "#FDE3CA",
         display: "flex",
         alignItems: "center",
         // justifyContent: "center",
@@ -68,29 +77,34 @@ function PartnersSection() {
           </p>
         </div>
         <Partners
-          logos={[
-            eps,
-            fik,
-            uik,
-            bcv,
-            eps,
-            eps,
-            uik,
-            fik,
-            bcv,
-            eps,
-            eps,
-            fik,
-            uik,
-            bcv,
-            eps,
-            eps,
-            uik,
-            fik,
-            bcv,
-            eps,
-          ]}
-        />
+        // logos={[
+        //   epsrc,
+        //   fiuk,
+        //   ukri,
+        //   bgv,
+        //   gcrf,
+        //   ukid,
+        //   vs,
+        //   moe,
+        //   mh,
+        //   hg,
+        //   mohe,
+        //   dfid,
+        // ]}
+        >
+          <img style={{ width: "auto", height: 50 }} src={epsrc} />
+          <img style={{ width: "auto", height: 40 }} src={fiuk} />
+          <img style={{ width: "auto", height: 40 }} src={ukri} />
+          <img style={{ width: "auto", height: 50 }} src={bgv} />
+          <img style={{ width: "auto", height: 50 }} src={gcrf} />
+          <img style={{ width: "auto", height: 50 }} src={ukid} />
+          <img style={{ width: "auto", height: 50 }} src={vs} />
+          <img style={{ width: "auto", height: 50 }} src={moe} />
+          <img style={{ width: "auto", height: 40 }} src={mh} />
+          <img style={{ width: "auto", height: 80 }} src={hg} />
+          <img style={{ width: "auto", height: 50 }} src={mohe} />
+          <img style={{ width: "auto", height: 50 }} src={dfid} />
+        </Partners>
         <div
           className="buttonGrp"
           style={{ marginTop: "1rem", marginBottom: "1rem" }}

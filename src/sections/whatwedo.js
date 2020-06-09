@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import OelButton from "../components/button";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import common from "../styles/styles";
-import learningIcon from "../media/Learning.png";
-import energyIcon from "../media/Energy.png";
-import captureIcon from "../media/Capture.png";
 import MailModal from "../components/modal";
 import Wd1 from "../media/svgComponents/wd1";
 import Wd2 from "../media/svgComponents/wd2";
 import Wd3 from "../media/svgComponents/wd3";
 import DoubleArrow from "../media/svgComponents/doubleFacedArrow";
+import Pip from "../media/svgComponents/people";
 
 function WhatWeDoSection() {
   const [show, setShow] = useState(false);
@@ -81,7 +77,7 @@ function WhatWeDoSection() {
             <DoubleArrow />
           </div>
           <div lg={12} sm className="service-item font-glyph">
-            <Wd3 />
+            <Pip />
             <p className="service-title">Reduce Energy Poverty</p>
             <p className="service-sub">
               We empower and inspire people and communities to innovate towards

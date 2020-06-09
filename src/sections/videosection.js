@@ -5,6 +5,7 @@ import Vimeo from "@u-wave/react-vimeo";
 import MailModal from "../components/modal";
 import OelButton from "../components/button";
 import ReactPlayer from "react-player";
+import VimeoVideo from "../components/vimeoemb";
 
 function VideoSection() {
   const [show, setShow] = useState(false);
@@ -82,7 +83,10 @@ function VideoSection() {
               early-access link to our campaign when it is live.
             </p>
 
-            <div id="button1-vid-sect" style={{ marginTop: "30px" }}>
+            <div
+              id="button1-vid-sect"
+              style={{ marginTop: "30px", marginBottom: "50px" }}
+            >
               <OelButton
                 onPressed={handleShow}
                 color={"#fde3ca"}
@@ -102,22 +106,19 @@ function VideoSection() {
           >
             <p style={{ fontSize: "20px" }}>Watch our campaign video</p>
             <p style={{ fontSize: "20px", margin: 20 }}>↓</p>
-            {/* <Vimeo video="https://vimeo.com/425909940" /> */}
-            <ReactPlayer
-              width="100%"
-              height="50%"
-              url="https://vimeo.com/426770187"
-            />
+            <div style={{ width: "100%", position: "relative" }}>
+              <VimeoVideo />
+            </div>
           </div>
         </div>
-        <div id="button2-vid-sect">
+        {/* <div id="button2-vid-sect">
           <OelButton
             path="#whatwedo"
             color="#fde3ca"
             name="What we do"
             hideAnt={true}
           />
-        </div>
+        </div> */}
         <div
           style={{
             borderBottom: "1px #fde3ca solid",

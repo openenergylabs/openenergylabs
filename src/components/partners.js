@@ -3,7 +3,7 @@ import common from "../styles/styles";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-function Partners({ logos }) {
+function Partners({ children }) {
   return (
     <div
       id="partnerLogos"
@@ -11,29 +11,33 @@ function Partners({ logos }) {
         display: "grid",
         gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
         width: "100%",
+        maxWidth: "1118px",
         marginTop: "2rem",
-        // justifyItems: "start",
-        gridGap: 20,
+        justifyItems: "start",
+        alignItems: "center",
+        // columnGap: 20,
+        gridGap: 50,
       }}
     >
-      {logos &&
+      {/* {logos &&
         logos.map((logo, index) => {
           return (
             <div
               key={index}
               style={{
-                marginBottom: 50,
-                width: "100%",
-                flexGrow: 0,
-                justifyContent: "center",
-                alignItems: "center",
-                display: "flex",
+                margin: 5,
+                // flexGrow: 0,
+                // justifyContent: "center",
+                // alignItems: "center",
+                // display: "flex",
               }}
             >
-              <img height={40} src={logo} />
+              <img width="auto" height={"auto"} src={logo} />
             </div>
           );
-        })}
+        })} */}
+
+      {children}
     </div>
   );
 }
