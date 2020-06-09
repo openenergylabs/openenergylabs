@@ -78,7 +78,7 @@ function FooterSection() {
               id="ft-copyright"
               style={{
                 position: "absolute",
-                bottom: "1%",
+                bottom: "3%",
                 color: "#fff",
               }}
             >

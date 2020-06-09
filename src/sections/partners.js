@@ -11,8 +11,8 @@ import gcrf from "../media/gcrf.png";
 import fiuk from "../media/fiuk.png";
 import bgv from "../media/bgv.png";
 import mh from "../media/mh.png";
-import moe from "../media/MoE.png";
-import mohe from "../media/MoHE.png";
+import moe from "../media/moe.png";
+import mohe from "../media/mohe.png";
 import hg from "../media/hg.png";
 import ukid from "../media/ukid.png";
 import ukri from "../media/ukri.png";
@@ -69,7 +69,8 @@ function PartnersSection() {
               textAlign: "center",
               color: "#5D4DC4",
               fontSize: "20px",
-              width: "80%",
+              width: "100%",
+              marginTop: "20px",
             }}
           >
             We're backed by some of the leading organisations in energy,
