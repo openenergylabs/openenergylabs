@@ -17,6 +17,7 @@ import hg from "../media/hg.png";
 import ukid from "../media/ukid.png";
 import ukri from "../media/ukri.png";
 import vs from "../media/vs.png";
+import ria from "../media/ria.png";
 
 function PartnersSection() {
   const [show, setShow] = useState(false);
@@ -128,6 +129,9 @@ function PartnersSection() {
           </a>
           <a href="https://www.gov.uk/government/organisations/department-for-international-development">
             <img style={{ width: "auto", height: 50 }} src={dfid} />
+          </a>
+          <a href="https://www.renewablesinafrica.com/">
+            <img style={{ width: "auto", height: 50 }} src={ria} />
           </a>
         </Partners>
         <div

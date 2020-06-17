@@ -10,8 +10,6 @@ import PartnersSection from "./sections/partners";
 import FooterSection from "./sections/footerSection";
 import Banner from "./components/banner";
 
-// TODO: Change favicon OEL
-
 function App() {
   const [show, setShow] = useState(false);
 
