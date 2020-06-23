@@ -145,9 +145,10 @@ function PartnersSection() {
             hideAnt={true}
           />
           <OelButton
-            onPressed={handleShow}
+            path="https://www.crowdcube.com/companies/open-energy-labs/pitches/b6nMpb"
+            // onPressed={handleShow}
             color={"#5D4DC4"}
-            name={"Register to invest"}
+            name={"Invest now"}
           />
         </div>
       </Container>
