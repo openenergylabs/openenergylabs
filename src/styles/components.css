@@ -1,0 +1,20 @@
+/* Top navigation bar */
+
+#top-nav {
+  color: #7166cf;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  padding: 20px;
+  background-color: #ffffff;
+}
+#tn-title {
+  font-size: 25px;
+  text-align: center;
+}
+
+#top-nav-menu-button {
+  align-self: flex-end;
+  font-size: 30px;
+  margin: 0px;
+  line-height: 15px;
+}

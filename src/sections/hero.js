@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import OelButton from "./button";
-import ButtonGroup from "./buttonGroup";
-import MailModal from "./modal";
-import Horizontal from "./horizontalLIne";
+import OelButton from "../components/button";
+import MailModal from "../components/modal";
+import Horizontal from "../components/horizontalLIne";
+import "../styles/herosection.css";
 
 function Hero() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   return (
     <header
       id={"hero"}
