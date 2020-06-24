@@ -41,7 +41,7 @@ function VideoSection() {
           className="section-title"
           style={{ color: "#FDE3CA", marginBottom: "50px" }}
         >
-          We’re raising investment soon on Crowdcube
+          Raising investment now on Crowdcube
         </h3>
 
         <div
@@ -78,9 +78,9 @@ function VideoSection() {
             </p>
             <p style={{ textAlign: "justify" }}>
               Register below for info, updates and an exclusive early-access
-              link to our campaign when it is live. You will have the chance 
-              to join us on our journey as we support young people in Africa 
-              to build the renewable energy systems of the future.
+              link to our campaign when it is live. You will have the chance to
+              join us on our journey as we support young people in Africa to
+              build the renewable energy systems of the future.
             </p>
 
             <div
@@ -88,9 +88,10 @@ function VideoSection() {
               style={{ marginTop: "30px", marginBottom: "50px" }}
             >
               <OelButton
-                onPressed={handleShow}
+                path="https://www.crowdcube.com/companies/open-energy-labs/pitches/b6nMpb"
+                // onPressed={handleShow}
                 color={"#fde3ca"}
-                name={"Register to invest"}
+                name={"Invest now"}
               />
             </div>
           </div>
