@@ -2,6 +2,12 @@
   width: 100%;
 }
 
+.carousel-indicators li {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+}
+
 .section {
   height: 100%;
 }

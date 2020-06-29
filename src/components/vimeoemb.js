@@ -6,7 +6,7 @@ function VimeoVideo() {
       id="videoFrame"
       src="https://player.vimeo.com/video/425909940"
       width={500}
-      height={250}
+      height={"auto"}
       frameBorder={0}
       allow="autoplay; fullscreen"
       allowFullScreen

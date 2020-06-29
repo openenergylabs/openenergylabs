@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import OelButton from "../components/button";
-import MailModal from "../components/modal";
-import Horizontal from "../components/horizontalLIne";
 import "../styles/herosection.css";
 import AngleBracketLeft from "../media/svgComponents/angleBracketLeft";
 import AngleBracketRight from "../media/svgComponents/angleBracketRight";
-import logo from "../media/logo192.png";
 import Logo from "../media/svgComponents/logo";
 
 function Hero() {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
+  const [, setShow] = useState(false);
   return (
     <header id="hero-contn">
       <div id="hr-img-sec">
