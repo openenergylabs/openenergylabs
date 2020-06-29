@@ -1,7 +1,15 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 
-function OelButton({ name, color, path, onPressed, hideAnt }) {
+function OelButton({
+  name,
+  color,
+  path,
+  onPressed,
+  hideAnt,
+  textColor,
+  outline,
+}) {
   const onButtonPressed = (e) => {
     if (onPressed) {
       onPressed();
@@ -10,6 +18,7 @@ function OelButton({ name, color, path, onPressed, hideAnt }) {
   };
   return (
     <a
+      id="oel-btn-container"
       style={{
         display: "flex",
         flexDirection: "column",
@@ -52,12 +61,13 @@ function OelButton({ name, color, path, onPressed, hideAnt }) {
       <Button
         onClick={onPressed}
         className="oelbtn"
-        variant={"outline-primary"}
+        variant={outline && "outline-primary"}
         style={{
           borderRadius: 20,
           margin: 0,
-          color: color,
+          color: textColor,
           borderColor: color,
+          background: outline ? "transparent" : color,
         }}
       >
         {name}

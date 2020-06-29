@@ -3,59 +3,54 @@ import OelButton from "../components/button";
 import MailModal from "../components/modal";
 import Horizontal from "../components/horizontalLIne";
 import "../styles/herosection.css";
+import AngleBracketLeft from "../media/svgComponents/angleBracketLeft";
+import AngleBracketRight from "../media/svgComponents/angleBracketRight";
+import logo from "../media/logo192.png";
+import Logo from "../media/svgComponents/logo";
 
 function Hero() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   return (
-    <header
-      id={"hero"}
-      className={"section"}
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        backgroundColor: "#FDE3CA",
-      }}
-    >
-      <div
-        className="content"
-        style={{
-          maxHeight: "900px",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          height: "100vh",
-          justifyContent: "center",
-          position: "relative",
-          padding: 20,
-          width: "100%",
-        }}
-      >
-        <MailModal show={show} onHide={handleClose} />
-        <h1 className={"hdr-text font-glyph"}>Open Energy Labs</h1>
-        <p className="sub-hdr-text font-glyph">
-          Universal access to electricity through education
-        </p>
-
-        <div
-          className="buttonGrp"
-          style={{ marginTop: "1rem", marginBottom: "1rem", marginTop: 30 }}
-        >
-          <OelButton
-            path="#videosection"
-            color="#5D4DC4"
-            name="Learn more"
-            hideAnt={true}
-          />
-          <OelButton
-            path="https://www.crowdcube.com/companies/open-energy-labs/pitches/b6nMpb"
-            // onPressed={handleShow}
-            color={"#5D4DC4"}
-            name={"Invest now"}
-          />
+    <header id="hero-contn">
+      <div id="hr-img-sec">
+        <div id="hr-img-sec-inner">
+          <div id="leftbrkt">
+            <AngleBracketLeft />
+          </div>
+          <p>Universal access to electricity through education</p>
+          <div id="rightbrkt">
+            <AngleBracketRight />
+          </div>
         </div>
-        <Horizontal color={"#5D4DC4"} />
+      </div>
+      <div id="hr-logobtn-sec">
+        <div id="hr-logobtn-sec-inner">
+          <ul id="actn-btns-ls">
+            <li>
+              <OelButton
+                hideAnt
+                name="find out"
+                color="#6C5DC9"
+                textColor="#fff"
+              />
+            </li>
+            <li>
+              <OelButton hideAnt name="Get in touch" color="#6C5DC9" />
+            </li>
+            <li>
+              <OelButton hideAnt name="holder" color="#6C5DC9" />
+            </li>
+          </ul>
+          <div>
+            <Logo id="hr-logo" />
+          </div>
+        </div>
+      </div>
+      <div id="hr-btm-address">
+        <p>
+          32/6 Joseph Mwilwa Road, Rhodes Park, <br /> Lusaka — Zambia{" "}
+        </p>
       </div>
     </header>
   );

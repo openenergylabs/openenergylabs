@@ -12,7 +12,7 @@ function Banner(props) {
       style={{
         display: "grid",
         visibility: close && "hidden",
-        position: "fixed",
+        position: "absolute",
         gridTemplateColumns: "10fr 1fr",
         backgroundColor: "#942202",
         zIndex: 999,

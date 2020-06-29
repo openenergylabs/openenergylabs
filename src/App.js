@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Layout from "./components/layout";
 import "./App.css";
-import "./styles/components.css"
+import "./styles/components.css";
 import MailModal from "./components/modal";
 import VideoSection from "./sections/videosection";
 import WhatWeDoSection from "./sections/whatwedo";
@@ -20,8 +20,8 @@ function App() {
   return (
     <Layout>
       <div className="App">
+        {/* <Banner /> */}
         <TopNav />
-        <Banner />
         <MailModal show={show} onHide={handleClose} />
         <Hero />
         <VideoSection />

@@ -1,1 +1,86 @@
+#hero-contn {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.5fr max-content;
+}
+#hr-img-sec {
+  background: url("../media/mbLabBg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+#hr-img-sec-inner {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 100%;
+  margin-top: 50px;
+}
 
+#leftbrkt {
+  height: 50%;
+}
+#rightbrkt {
+  height: 50%;
+}
+
+#hr-img-sec-inner p {
+  font-size: 20px;
+  color: #fff;
+  margin: 10px;
+}
+#hr-logobtn-sec {
+  margin: 0px;
+  background: #5d4dc4;
+}
+
+#hr-logobtn-sec .oelbtn {
+  width: 98px;
+  height: 35px;
+  font-size: 12px;
+}
+
+#hr-logobtn-sec-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#actn-btns-ls {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px !important;
+  width: 100%;
+  margin: 10px;
+}
+#hr-btm-address {
+}
+#hr-logo {
+  margin: 20px;
+}
+
+#oel-btn-container {
+}
+#hr-btm-address {
+  background: #aea6e1;
+}
+
+#hr-btm-address p {
+  text-align: center;
+  margin: 10px;
+  font-size: small;
+  color: #7166cf;
+}
