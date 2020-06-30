@@ -1,0 +1,73 @@
+/* What we do  */
+
+/* .section-title {
+    margin-bottom: 100px;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+} */
+
+.service-item img {
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+}
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}
+.service-item a {
+  border-bottom: #fff 1px solid;
+  text-decoration: none;
+  color: #fff;
+}
+.service-item a:focus a:active {
+  color: #fff;
+  text-decoration: none;
+}
+.linkText {
+  margin-bottom: 2px;
+}
+.linkText:hover {
+  margin-bottom: 5px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: space-evenly;
+}
+
+.service-title {
+  /* text-transform: uppercase; */
+  font-size: 18px;
+  color: #fff;
+  margin: 10px;
+}
+
+.service-sub {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  max-width: 80%;
+}
+
+.wd-down-arrow {
+  color: #fff;
+}
+
+.section-title {
+  position: relative;
+  bottom: 0rem;
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+  top: 30px;
+}

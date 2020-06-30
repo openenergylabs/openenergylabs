@@ -1,24 +1,10 @@
 import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
-function CarouselComp(params) {
+function CarouselComp({ children }) {
   return (
-    <Carousel
-      interval={null}
-      controls={false}
-      style={{ height: "100px", background: "#abed47" }}
-    >
-      <Carousel.Item>
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </Carousel.Item>
-      <Carousel.Item>
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </Carousel.Item>
-      <Carousel.Item>
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </Carousel.Item>
+    <Carousel interval={null} controls={false} style={{ height: "100%" }}>
+      {children.length > 1 &&
+        children.map((child) => <Carousel.Item>{child}</Carousel.Item>)}
     </Carousel>
   );
 }
