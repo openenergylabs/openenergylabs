@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import MailFrom from "./form";
 import Mailchimp from "react-mailchimp-form";
-import Chimp from "./test";
+import Chimp from "./mc_form";
 
 function MailModal(props) {
   const url =

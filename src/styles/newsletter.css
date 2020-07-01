@@ -1,0 +1,84 @@
+.mc-field-group .form-control {
+  background-color: #9e3619;
+  height: 50px;
+  border: none;
+  margin: 5px 0;
+}
+.mc-field-group .form-control::placeholder {
+  color: #ff9359;
+  text-align: center;
+  font-size: 13px;
+}
+
+.mc-field-group label {
+  display: none;
+}
+#nl-content-wrapper {
+  background-color: #942202;
+  width: 80%;
+  margin: 35px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#nl-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../media/newsletter_bg.png");
+}
+#mc_embed_signup_scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#nl-title {
+  color: #ff9359;
+  margin: 20px 0;
+}
+
+.input-group {
+  margin: 25px 0;
+  align-items: center;
+  flex-direction: column;
+  width: unset !important;
+}
+
+.input-group ul {
+  margin: 0;
+  padding: 0;
+}
+.input-group label {
+  margin: 0;
+  color: #ff9359;
+  font-size: 13px;
+}
+.input-group input {
+  color: #942202 !important;
+  background-color: #9e3619 !important;
+}
+.nl-hr {
+  border-color: #9e3619;
+  border-width: 0.7px;
+}
+.nl-hr-container {
+  width: 100%;
+  position: relative;
+}
+#mc_embed_signup {
+  width: 100%;
+}
+.clear {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+.clear .btn {
+  width: 150px;
+  color: #942202;
+  background-color: #ff9359;
+  border-radius: 30px;
+  border: none;
+  font-size: 13px;
+}

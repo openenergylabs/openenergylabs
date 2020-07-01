@@ -11,6 +11,7 @@ import FooterSection from "./sections/footerSection";
 import Banner from "./components/banner";
 import Hero from "./sections/hero";
 import TopNav from "./components/topNav";
+import NewsLetter from "./sections/newsletter";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -27,6 +28,7 @@ function App() {
         <VideoSection />
         <WhatWeDoSection />
         <Le1Section />
+        <NewsLetter />
         <PartnersSection />
         <FooterSection />
       </div>
