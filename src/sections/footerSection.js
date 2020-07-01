@@ -4,6 +4,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import map from "../media/map.png";
 import MailModal from "../components/modal";
+import Logo from "../media/svgComponents/logo";
+import "../styles/footer.css";
 
 function FooterSection() {
   const [show, setShow] = useState(false);
@@ -12,89 +14,68 @@ function FooterSection() {
   return (
     <footer
       // className={"section"}
-      style={{ backgroundColor: "#5D4DC4", width: "100%" }}
+      style={{ backgroundColor: "#FFFFFE", width: "100%" }}
     >
       <Container className={"content"} fluid>
-        <Row>
-          <Col
-            className="footer-lft"
-            lg={7}
-            md={7}
-            sm
-            style={{ width: "100%", position: "relative", padding: "1%" }}
-          >
-            <MailModal show={show} onHide={handleClose} />
+        <div id="ftr-content-wrapper">
+          <p id="ftr-title">Open Energy Labs</p>
 
-            <div
-              id="ft-links"
-              style={{
-                width: "40%",
-                color: "#fff",
-              }}
-            >
-              <p style={{ marginBottom: "1rem" }}>Useful links</p>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  width: "100%",
-                }}
-              >
-                <div id="usef-links">
-                  <a href="https://facebook.com/openenergylabs">
-                    {" "}
-                    <p>&#8599; Facebook</p>
-                  </a>
-                  <a href="https://twitter.com/openenergylabs">
-                    {" "}
-                    <p>&#8599; Twitter</p>
-                  </a>
-                  <a href="https://www.linkedin.com/company/openenergylabs/">
-                    {" "}
-                    <p>&#8599; LinkedIn</p>
-                  </a>
-                  <a href="https://www.youtube.com/channel/UCIlPJfPOl-9aHnESa_MxBPg">
-                    {" "}
-                    <p>&#8599; Youtube</p>
-                  </a>
-                  <a href="https://www.instagram.com/openenergylabs/">
-                    {" "}
-                    <p>&#8599; Instagram</p>
-                  </a>
-                </div>
-
-                <div>
-                  <a
-                    style={{ color: "#fff", textDecoration: "underline" }}
-                    href={"mailto:hello@openenergylabs.co"}
-                  >
-                    Contact Us{" "}
-                  </a>
-                </div>
-              </div>{" "}
-            </div>
-
-            <div
-              id="ft-copyright"
-              style={{
-                position: "absolute",
-                bottom: "3%",
-                color: "#fff",
-              }}
-            >
-              <p style={{ marginBottom: "1rem" }}>
-                &#169; Copyright {new Date().getFullYear()}, Open Energy Labs
-              </p>
-              <p>
-                32/6 Joseph Mwilwa Rd <br /> Lusaka Zambia
-              </p>
-            </div>
-          </Col>
-          <Col>
+          <div id="ftr-map">
             <img width={"100%"} height={"100%"} src={map} />
-          </Col>
-        </Row>
+          </div>
+          <div id="ftr-logo-and-socials-container">
+            <p id="ftr-address">
+              Open Energy Labs <br />
+              32/6 Joseph Mwila Road <br />
+              Rhodes park, <br />
+              Lusaka — Zambia
+            </p>
+
+            <div id={"ftr-logo"}>
+              <Logo color={"#5D4DC4"} height={100} />
+            </div>
+
+            <div id="ftr-socials">
+              <a href="https://facebook.com/openenergylabs">
+                <p>&#8599; Facebook</p>
+              </a>
+              <a href="https://twitter.com/openenergylabs">
+                <p>&#8599; Twitter</p>
+              </a>
+              <a href="https://www.linkedin.com/company/openenergylabs/">
+                <p>&#8599; LinkedIn</p>
+              </a>
+              <a href="https://www.youtube.com/channel/UCIlPJfPOl-9aHnESa_MxBPg">
+                <p>&#8599; Youtube</p>
+              </a>
+              <a href="https://www.instagram.com/openenergylabs/">
+                <p>&#8599; Instagram</p>
+              </a>
+            </div>
+            <div style={{ width: "100%" }}>
+              <hr id={"ftr-hr"} />
+            </div>
+
+            <ul id={"ftr-cta-links"}>
+              <li>
+                <p>Contact us</p>
+              </li>
+              <li>
+                <p>Newsletter</p>
+              </li>
+              <li>
+                <p>Terms</p>
+              </li>
+              <li>
+                <p>Credits</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </Container>
+      <div id="ftr-copyright">
+        <p>&#169; Copyright {new Date().getFullYear()}, Open Energy Labs</p>
+      </div>
     </footer>
   );
 }
