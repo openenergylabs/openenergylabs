@@ -3,11 +3,29 @@
   height: 50px;
   border: none;
   margin: 5px 0;
+  color: #ff9359;
+  text-align: center;
+  font-size: 13px;
 }
 .mc-field-group .form-control::placeholder {
   color: #ff9359;
   text-align: center;
   font-size: 13px;
+}
+/* input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover {
+  background-color: #9e3619 !important;
+  color: #ff9359 !important;
+  text-align: center !important;
+  font-size: 13px !important;
+} */
+.mc-field-group .form-control:focus {
+  color: #ff9359;
+  background-color: #9e3619;
+  border-color: unset !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #ff9359;
 }
 
 .mc-field-group label {
