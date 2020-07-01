@@ -1,0 +1,27 @@
+#le1-intro-text {
+  height: 100vh;
+}
+#le1-bracketed-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#le1-product-name {
+  font-size: 8rem;
+  /* margin-top: 50px; */
+}
+#le1-action-buttons .oelbtn {
+  font-size: 12px;
+  width: 140px;
+}
+#le1-action-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100%;
+  width: 90%;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#le1-desc-text {
+  font-size: 14px;
+  width: 100%;
+}

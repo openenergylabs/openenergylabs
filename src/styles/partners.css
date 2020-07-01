@@ -1,0 +1,34 @@
+.ptn-partners-bunch {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(85px, max-content));
+  gap: 10px;
+  width: 100%;
+  max-width: 100%;
+  justify-content: center;
+  row-gap: 30px;
+}
+#partners-mobile {
+  height: 300px;
+  width: 100%;
+}
+#partners-mobile .carousel-indicators li {
+  background-color: #7166cf !important;
+}
+#ptn-partners-title {
+  font-size: 20px;
+  text-align: center;
+  color: #7166cf;
+  margin: 50px 0px 50px 0px;
+}
+.ptn-logo {
+  width: auto;
+  height: 30px;
+}
+#ptn-bottom-text-and-btn p {
+  text-align: center;
+  font-size: 14px;
+  color: #7166cf;
+}
+#ptn-bottom-text-and-btn .oelbtn {
+  font-size: 12px;
+}

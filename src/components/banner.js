@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import CLoseIcon from "../media/svgComponents/XcloseIcon";
 
 function Banner(props) {

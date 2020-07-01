@@ -3,6 +3,7 @@ import OelButton from "../components/button";
 import Container from "react-bootstrap/Container";
 import Partners from "../components/partners";
 import MailModal from "../components/modal";
+import "../styles/partners.css";
 
 // partners logos
 import dfid from "../media/dfid.png";
@@ -18,6 +19,7 @@ import ukid from "../media/ukid.png";
 import ukri from "../media/ukri.png";
 import vs from "../media/vs.png";
 import ria from "../media/ria.png";
+import CarouselComp from "../components/carasoul";
 
 function PartnersSection() {
   const [show, setShow] = useState(false);
@@ -28,7 +30,7 @@ function PartnersSection() {
       id="partners"
       className={"section"}
       style={{
-        backgroundColor: "#FDE3CA",
+        backgroundColor: "#F5F4FB",
         display: "flex",
         alignItems: "center",
         // justifyContent: "center",
@@ -47,108 +49,106 @@ function PartnersSection() {
           padding: "3%",
         }}
       >
-        <div
-          style={{
-            marginBottom: "2.5em",
-            flexDirection: "column",
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
-          <h3
-            className="section-title"
-            style={{
-              textAlign: "center",
-              color: "#5D4DC4",
-              marginBottom: 10,
-            }}
-          >
-            Our partners & investors
-          </h3>
-          <p
-            style={{
-              textAlign: "center",
-              color: "#5D4DC4",
-              fontSize: "20px",
-              width: "100%",
-              marginTop: "20px",
-            }}
-          >
-            We're backed by some of the leading organisations in energy,
-            development and impact investing.
-          </p>
+        <p id="ptn-partners-title">Our partners & investors</p>
+
+        <div style={{ display: "none" }}>
+          <Partners>
+            <a href="https://epsrc.ukri.org/">
+              <img style={{ width: "auto", height: 50 }} src={epsrc} />
+            </a>
+            <a href="https://www.gov.uk/government/organisations/innovate-uk">
+              <img style={{ width: "auto", height: 40 }} src={fiuk} />
+            </a>
+            <a href="http://ukri.org/">
+              <img style={{ width: "auto", height: 40 }} src={ukri} />
+            </a>
+            <a href="https://bethnalgreenventures.com/">
+              <img style={{ width: "auto", height: 50 }} src={bgv} />
+            </a>
+            <a href="https://www.ukri.org/research/global-challenges-research-fund/">
+              <img style={{ width: "auto", height: 50 }} src={gcrf} />
+            </a>
+            <a href="https://www.ukaiddirect.org/">
+              <img style={{ width: "auto", height: 50 }} src={ukid} />
+            </a>
+            <a href="https://www.virginstartup.org/">
+              <img style={{ width: "auto", height: 50 }} src={vs} />
+            </a>
+            <a href="#">
+              <img style={{ width: "auto", height: 80 }} src={moe} />
+            </a>
+            <a href="#">
+              <img style={{ width: "auto", height: 40 }} src={mh} />
+            </a>
+            <a href="#">
+              <img style={{ width: "auto", height: 80 }} src={hg} />
+            </a>
+            <a href="#">
+              <img style={{ width: "auto", height: 80 }} src={mohe} />
+            </a>
+            <a href="https://www.gov.uk/government/organisations/department-for-international-development">
+              <img style={{ width: "auto", height: 50 }} src={dfid} />
+            </a>
+            <a href="https://www.renewablesinafrica.com/">
+              <img style={{ width: "auto", height: 50 }} src={ria} />
+            </a>
+          </Partners>
         </div>
-        <Partners
-        // logos={[
-        //   epsrc,
-        //   fiuk,
-        //   ukri,
-        //   bgv,
-        //   gcrf,
-        //   ukid,
-        //   vs,
-        //   moe,
-        //   mh,
-        //   hg,
-        //   mohe,
-        //   dfid,
-        // ]}
-        >
-          <a href="https://epsrc.ukri.org/">
-            <img style={{ width: "auto", height: 50 }} src={epsrc} />
-          </a>
-          <a href="https://www.gov.uk/government/organisations/innovate-uk">
-            <img style={{ width: "auto", height: 40 }} src={fiuk} />
-          </a>
-          <a href="http://ukri.org/">
-            <img style={{ width: "auto", height: 40 }} src={ukri} />
-          </a>
-          <a href="https://bethnalgreenventures.com/">
-            <img style={{ width: "auto", height: 50 }} src={bgv} />
-          </a>
-          <a href="https://www.ukri.org/research/global-challenges-research-fund/">
-            <img style={{ width: "auto", height: 50 }} src={gcrf} />
-          </a>
-          <a href="https://www.ukaiddirect.org/">
-            <img style={{ width: "auto", height: 50 }} src={ukid} />
-          </a>
-          <a href="https://www.virginstartup.org/">
-            <img style={{ width: "auto", height: 50 }} src={vs} />
-          </a>
-          <a href="#">
-            <img style={{ width: "auto", height: 80 }} src={moe} />
-          </a>
-          <a href="#">
-            <img style={{ width: "auto", height: 40 }} src={mh} />
-          </a>
-          <a href="#">
-            <img style={{ width: "auto", height: 80 }} src={hg} />
-          </a>
-          <a href="#">
-            <img style={{ width: "auto", height: 80 }} src={mohe} />
-          </a>
-          <a href="https://www.gov.uk/government/organisations/department-for-international-development">
-            <img style={{ width: "auto", height: 50 }} src={dfid} />
-          </a>
-          <a href="https://www.renewablesinafrica.com/">
-            <img style={{ width: "auto", height: 50 }} src={ria} />
-          </a>
-        </Partners>
+        <div id="partners-mobile">
+          <CarouselComp>
+            <div className="ptn-partners-bunch" style={{}}>
+              <a href="https://epsrc.ukri.org/">
+                <img className="ptn-logo" src={epsrc} />
+              </a>
+              <a href="https://www.gov.uk/government/organisations/innovate-uk">
+                <img className="ptn-logo" src={fiuk} />
+              </a>
+              <a href="http://ukri.org/">
+                <img className="ptn-logo" src={ukri} />
+              </a>
+              <a href="https://bethnalgreenventures.com/">
+                <img className="ptn-logo" src={bgv} />
+              </a>
+              <a href="https://www.ukri.org/research/global-challenges-research-fund/">
+                <img className="ptn-logo" src={gcrf} />
+              </a>
+              <a href="https://www.ukaiddirect.org/">
+                <img className="ptn-logo" src={ukid} />
+              </a>
+              <a href="https://www.virginstartup.org/">
+                <img className="ptn-logo" src={vs} />
+              </a>
+              <a href="#">
+                <img className="ptn-logo" src={moe} />
+              </a>
+              <a href="https://www.gov.uk/government/organisations/department-for-international-development">
+                <img className="ptn-logo" src={dfid} />
+              </a>
+            </div>
+
+            <div className="ptn-partners-bunch">
+              <a href="https://www.renewablesinafrica.com/">
+                <img className="ptn-logo" src={ria} />
+              </a>
+            </div>
+          </CarouselComp>
+        </div>
+        <div style={{ width: "100%" }}>
+          <hr style={{ border: "0.7px solid #E8E6F7" }} />
+        </div>
         <div
-          className="buttonGrp"
+          id="ptn-bottom-text-and-btn"
           style={{ marginTop: "1rem", marginBottom: "1rem" }}
         >
+          <p>
+            Open Energy Labs is backed by some of the leading organisations in
+            energy, development and impact investing
+          </p>
           <OelButton
             path="mailto:hello@localelectricity.org"
             color="#5D4DC4"
             name="Partner with us"
-            hideAnt={true}
-          />
-          <OelButton
-            path="https://www.crowdcube.com/companies/open-energy-labs/pitches/b6nMpb"
-            // onPressed={handleShow}
-            color={"#5D4DC4"}
-            name={"Invest now"}
+            hideAnt
           />
         </div>
       </Container>

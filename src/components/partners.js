@@ -1,7 +1,5 @@
 import React from "react";
-import common from "../styles/styles";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+
 
 function Partners({ children }) {
   return (
@@ -19,24 +17,6 @@ function Partners({ children }) {
         gridGap: 50,
       }}
     >
-      {/* {logos &&
-        logos.map((logo, index) => {
-          return (
-            <div
-              key={index}
-              style={{
-                margin: 5,
-                // flexGrow: 0,
-                // justifyContent: "center",
-                // alignItems: "center",
-                // display: "flex",
-              }}
-            >
-              <img width="auto" height={"auto"} src={logo} />
-            </div>
-          );
-        })} */}
-
       {children}
     </div>
   );

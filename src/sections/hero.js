@@ -6,7 +6,7 @@ import AngleBracketRight from "../media/svgComponents/angleBracketRight";
 import Logo from "../media/svgComponents/logo";
 
 function Hero() {
-  const [, setShow] = useState(false);
+  // const [, setShow] = useState(false);
   return (
     <header id="hero-contn">
       <div id="hr-img-sec">

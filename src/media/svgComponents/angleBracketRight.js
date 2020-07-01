@@ -4,7 +4,7 @@ function AngleBracketRight(props) {
   return (
     <svg
       width={8}
-      height={"auto"}
+      height={"100%"}
       viewBox="0 0 8 90"
       fill="none"
       preserveAspectRatio="none"
