@@ -1,5 +1,8 @@
 #hero-contn {
   height: 90vh;
+}
+#hr-main {
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.5fr max-content;
@@ -15,14 +18,15 @@
   justify-content: center;
 }
 #hr-img-sec-inner {
-  display: flex;
-  flex-direction: row;
   width: 80%;
+  height: 200px;
+  /* display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
   height: 100%;
-  margin-top: 50px;
+  margin-top: 50px; */
 }
 
 #leftbrkt {
@@ -66,21 +70,137 @@
   width: 100%;
   margin: 10px;
 }
-#hr-btm-address {
-}
+
 #hr-logo {
   margin: 20px;
 }
 
 #oel-btn-container {
 }
-#hr-btm-address {
+.hr-btm-address {
   background: #aea6e1;
 }
 
-#hr-btm-address p {
+.hr-btm-address p {
   text-align: center;
   margin: 10px;
   font-size: small;
   color: #7166cf;
+}
+.hr-btm-address br {
+  display: none;
+}
+
+#hr-aside {
+  display: none;
+}
+
+#hr-labimage-bg {
+  display: none;
+}
+#hr-addr-lg {
+  display: none;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #hr-addr-lg {
+    display: block;
+  }
+  #hr-labimage-bg {
+    display: block;
+  }
+  #hr-logobtn-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #hr-logobtn-sec-inner {
+    width: 30%;
+  }
+  #hr-img-sec-inner {
+    width: 50%;
+    position: absolute;
+  }
+
+  .hr-btm-address p {
+    margin: 0;
+    padding: 10px;
+  }
+  #hr-main .hr-btm-address {
+    display: none;
+  }
+  #hr-main {
+    grid-template-rows: 1fr max-content;
+  }
+  #hero-contn {
+    height: 100%;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    padding-top: 58px;
+  }
+  #hr-img-sec {
+    background: #5d4dc4;
+    position: relative;
+  }
+  #hr-logo-cnt {
+    display: none;
+  }
+  #hr-aside {
+    display: grid;
+    background-color: #5d4dc4;
+    width: 320px;
+    grid-template-rows: max-content;
+  }
+  #hr-notice p {
+    background-color: #b4b5b4;
+    color: #7166cf;
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+  }
+
+  #hr-aside-video {
+    background: #ff7f48;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #hr-aside-video p {
+    text-align: center;
+    color: #a73200;
+  }
+  #hr-hrnt-cont {
+    width: 100%;
+  }
+  #hr-hrnt-cont hr {
+    border: 0.75px solid #ff8a58;
+  }
+  #hr-vid-comp {
+    margin: 20px 0;
+  }
+  #hr-cube-logo {
+    width: auto;
+    height: 50px;
+    margin: 20px 0;
+  }
+  #hr-aside-logo-cont {
+    background: #fff;
+    padding: 40px 0;
+  }
+  #hr-labimage-bg {
+    width: 50vw;
+    height: auto;
+    margin: 10px;
+  }
+  #actn-btns-ls li {
+    margin: 20px 10px;
+  }
+
+  .hr-link-underline {
+    text-decoration: underline;
+  }
+  .hr-link-underline a {
+    color: inherit;
+    padding: 5px;
+  }
 }
