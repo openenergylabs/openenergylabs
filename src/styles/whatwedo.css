@@ -71,3 +71,19 @@
   margin-bottom: 30px;
   top: 30px;
 }
+#wd-lg-wrapper {
+  display: none;
+}
+#wd-sm-wrapper {
+  height: 500px;
+}
+
+@media only screen and (min-width: 600px) {
+  #wd-sm-wrapper {
+    display: none;
+  }
+  #wd-lg-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
