@@ -31,3 +31,41 @@
   justify-content: center;
   align-content: center;
 }
+#vl {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  #vs-content-inner-wrapper {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    justify-items: center;
+    align-items: center;
+    /* padding-bottom: 20px; */
+  }
+
+  #vs-video-wrapper p {
+    font-size: 12px;
+    margin: 20px;
+  }
+  #vs-video-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  #vs-btn-copy-wrapper {
+    width: 70%;
+  }
+  #vl {
+    display: block;
+    border-left: 1px solid #ff8a58;
+    height: 100%;
+  }
+  #vs-hr {
+    margin: 0 !important;
+  }
+  #vs-actn-btn .oelbtn {
+    width: 140px;
+  }
+}

@@ -21,14 +21,15 @@ function VideoSection() {
       <div id="vs-content-wrapper" style={{ background: "#FF7F48" }}>
         <div style={{ width: "100%", textAlign: "center" }}>
           <p id="vs-title"> Now raising on Crowdcube</p>
-          <hr style={{ borderColor: "#FF8A58" }} />
+          <hr id="vs-hr" style={{ borderColor: "#FF8A58" }} />
         </div>
         <div id="vs-content-inner-wrapper">
           <div id="vs-video-wrapper" style={{}}>
+            <p>Watch our campaign video</p>
             <VimeoVideo />
           </div>
-
-          <div>
+          <div id="vl"></div>
+          <div id="vs-btn-copy-wrapper">
             <p
               style={{ textAlign: "center", fontSize: "12px", margin: "20px" }}
             >
