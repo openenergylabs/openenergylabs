@@ -21,27 +21,24 @@ function Le1Section() {
       }}
     >
       <MailModal show={show} onHide={handleClose} />
-      <Container
+      <div
+        id={"le1-main-wrapper"}
         className="content"
         style={{
           height: "100%",
           ...common.centerItemsVt,
         }}
       >
-        <div>
+        <div id="le1-copy-wrapper">
           {/* left le1 image*/}
-          <div
-            style={{
-              position: "relative",
-              display: "none",
-            }}
-          >
-            <div>
+          <div>
+            <div id="le1-img-cont">
               <Le1
                 style={{
-                  maxWidth: "100%",
+                  height: "auto",
                   width: "100%",
-                  height: "40%",
+                  position: "relative",
+                  left: "-50px",
                 }}
               />
             </div>
@@ -81,27 +78,27 @@ function Le1Section() {
                 renewable electricity supply, able to provide reliable power for
                 lighting and mobile-phone charging.
               </p>
-            {/* action buttons */}
-            <div id="le1-action-buttons">
-              <OelButton
-                outline
-                hideAnt
-                name="Visit EMA website"
-                color="#fff"
-                textColor="#fff"
-              />
-              <OelButton
-                outline
-                hideAnt
-                name="Graduate spotlight"
-                color="#fff"
-                textColor="#fff"
-              />
-            </div>
+              {/* action buttons */}
+              <div id="le1-action-buttons">
+                <OelButton
+                  outline
+                  hideAnt
+                  name="Visit EMA website"
+                  color="#fff"
+                  textColor="#fff"
+                />
+                <OelButton
+                  outline
+                  hideAnt
+                  name="Graduate spotlight"
+                  color="#fff"
+                  textColor="#fff"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 }
