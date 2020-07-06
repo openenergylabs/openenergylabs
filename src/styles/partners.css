@@ -32,3 +32,22 @@
 #ptn-bottom-text-and-btn .oelbtn {
   font-size: 12px;
 }
+#ptn-web {
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  #caption-text-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #caption-text {
+    max-width: 50%;
+  }
+  #partners-mobile {
+    display: none;
+  }
+  #ptn-web {
+    display: block;
+  }
+}

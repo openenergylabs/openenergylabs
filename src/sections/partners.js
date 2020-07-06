@@ -51,7 +51,7 @@ function PartnersSection() {
       >
         <p id="ptn-partners-title">Our partners & investors</p>
 
-        <div style={{ display: "none" }}>
+        <div id="ptn-web">
           <Partners>
             <a href="https://epsrc.ukri.org/">
               <img style={{ width: "auto", height: 50 }} src={epsrc} />
@@ -140,10 +140,12 @@ function PartnersSection() {
           id="ptn-bottom-text-and-btn"
           style={{ marginTop: "1rem", marginBottom: "1rem" }}
         >
-          <p>
-            Open Energy Labs is backed by some of the leading organisations in
-            energy, development and impact investing
-          </p>
+          <div id="caption-text-cont">
+            <p id="caption-text">
+              Open Energy Labs is backed by some of the leading organisations in
+              energy, development and impact investing
+            </p>
+          </div>
           <OelButton
             path="mailto:hello@localelectricity.org"
             color="#5D4DC4"
