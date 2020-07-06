@@ -11,14 +11,14 @@ function Chimp() {
         target="_blank"
         noValidate
       >
-        <div>
+        <div id="mc_form_inner">
           <div id="mc_embed_signup_scroll">
             {/* <div className="indicates-required">
             <span className="asterisk">*</span> indicates required
           </div> */}
 
             {/* radio buttons */}
-            <div className="input-group">
+            <div id="form-radio" className="input-group">
               {/* <strong>
               Receive crowdfunding info &amp; updates?{" "}
               <span className="asterisk">*</span>
@@ -143,6 +143,12 @@ function Chimp() {
           </div>
           <div className="nl-hr-container">
             <hr className="nl-hr" />
+          </div>
+          <div id="form-policy">
+            <p>*Open Energy Labs is data responsible</p>
+            <a>
+              <p id="policy-link">Read our data policy here</p>
+            </a>
           </div>
         </div>
       </form>

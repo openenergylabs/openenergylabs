@@ -10,11 +10,15 @@ function NewsLetter(props) {
         <div className="nl-hr-container">
           <hr className="nl-hr" />
         </div>
-        <img src={formImage} height={"100px"} width={"auto"} />
-        <div className="nl-hr-container">
-          <hr className="nl-hr" />
+        <div id="nl-image-form-wrapper">
+          <div id="nl-img-cont">
+            <img id="nl-image" src={formImage} />
+          </div>
+          <div className="nl-hr-container">
+            <hr className="nl-hr" />
+          </div>
+          <Chimp />
         </div>
-        <Chimp />
       </div>
     </div>
   );
