@@ -6,6 +6,7 @@ import map from "../media/map.png";
 import MailModal from "../components/modal";
 import Logo from "../media/svgComponents/logo";
 import "../styles/footer.css";
+import OelMap from "../components/map";
 
 function FooterSection() {
   const [show, setShow] = useState(false);
@@ -21,7 +22,8 @@ function FooterSection() {
           <p id="ftr-title">Open Energy Labs</p>
 
           <div id="ftr-map">
-            <img width={"100%"} height={"100%"} src={map} />
+            {/* <img width={"100%"} height={"100%"} src={map} /> */}
+            <OelMap />
           </div>
           <div id="ftr-logo-and-socials-container">
             <p id="ftr-address">
@@ -52,7 +54,7 @@ function FooterSection() {
                 <p>&#8599; Instagram</p>
               </a>
             </div>
-            <div style={{ width: "100%" }}>
+            <div id="ftr-hr-cont" style={{ width: "100%" }}>
               <hr id={"ftr-hr"} />
             </div>
 
