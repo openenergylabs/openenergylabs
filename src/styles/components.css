@@ -1,23 +1,126 @@
 /* Top navigation bar */
-
-#top-nav {
+.em-top-nav {
   color: #7166cf;
   display: grid;
   grid-template-columns: 1fr max-content;
-  padding: 10px;
+  padding: 10px 0;
   background-color: #ffffff;
   position: fixed;
   z-index: 999;
   width: 100%;
 }
-#tn-title {
-  font-size: 25px;
+.em-tn-title {
+  font-size: 20px;
   text-align: center;
 }
 
-#top-nav-menu-button {
+.em-top-nav-menu-button {
   align-self: flex-end;
-  font-size: 30px;
-  margin: 0px;
-  line-height: 15px;
+  /* font-size: 30px; */
+  margin: 0px 10px 0 0;
+  /* line-height: 15px; */
+}
+#em-menu-btns .oelbtn {
+  display: none;
+}
+#em-menu-btns .oelbtn:hover {
+  /* display: none; */
+  color: #ffffff !important;
+  background-color: #7166cf !important;
+}
+#em-menu-btns {
+  display: block;
+}
+
+.pp-menu-title {
+  font-size: 20px;
+  text-align: center;
+  margin-left: 30px;
+}
+@media only screen and (min-width: 600px) {
+  /* pop up menu styles */
+  #pp-menu-logo {
+    margin: 20px;
+  }
+  #pp-menu-list p {
+    margin: 0;
+    font-size: 19px;
+    text-align: center;
+    color: #fff;
+  }
+  #pp-menu-copyright p {
+    text-align: center;
+    margin: 10px;
+    color: #fff;
+    font-size: 13px;
+  }
+  #pp-menu-children {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    /* background-color: aqua; */
+  }
+  .pp-menu-top-nav {
+    color: #7166cf;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    padding: 10px 0;
+    background-color: #ffffff;
+    width: 100%;
+  }
+  .pp-menu-child ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #pp-menu-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .pp-menu-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* top navigation  */
+  .em-top-nav {
+    justify-items: center;
+    align-items: center;
+  }
+  .em-top-nav-menu-button {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  #em-menu-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* flex-direction: row; */
+    align-items: flex-end;
+    /* justify-content: space-evenly; */
+    justify-items: flex-end;
+    width: 200px;
+    /* background-color: #6df; */
+  }
+  #em-menu-btns .oelbtn {
+    display: block;
+    font-size: 12px;
+    width: 120px;
+    /* height: 35px; */
+    /* margin: 0 15px; */
+  }
+  #em-tn-title-cnt {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 200px;
+  }
 }

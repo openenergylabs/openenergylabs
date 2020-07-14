@@ -22,6 +22,6 @@ OelMap.defaultProps = {
     lat: -15.407269,
     lng: 28.2945083,
   },
-  zoom: 50,
+  zoom: 15,
 };
 export default OelMap;

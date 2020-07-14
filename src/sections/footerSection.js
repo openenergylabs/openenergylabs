@@ -15,6 +15,7 @@ function FooterSection() {
   return (
     <footer
       // className={"section"}
+      id="footer-section"
       style={{ backgroundColor: "#FFFFFE", width: "100%" }}
     >
       <Container className={"content"} fluid>

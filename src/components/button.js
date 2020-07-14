@@ -30,7 +30,7 @@ function OelButton({
     >
       <div
         style={{
-          display: "flex",
+          display: hideAnt ? "none" : "flex",
           visibility: hideAnt && "hidden",
           width: 50,
           justifyContent: "space-between",
