@@ -103,6 +103,13 @@
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  #hr-logobtn-sec .oelbtn:hover {
+    color: #7166cf !important;
+    background-color: #fff !important;
+  }
+  #hr-logobtn-sec .oelbtn {
+    width: 120px;
+  }
   #hr-addr-lg {
     display: block;
   }
@@ -113,9 +120,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* height: 100%; */
   }
   #hr-logobtn-sec-inner {
     width: 30%;
+    justify-content: unset;
   }
   #hr-img-sec-inner {
     width: 50%;
@@ -130,7 +139,10 @@
     display: none;
   }
   #hr-main {
-    grid-template-rows: 1fr max-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #5d4dc4;
+    justify-content: center;
   }
   #hero-contn {
     height: 100%;
@@ -151,9 +163,14 @@
     width: 320px;
     grid-template-rows: max-content;
   }
+  #hr-notice {
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
   #hr-notice p {
     background-color: #b4b5b4;
-    color: #7166cf;
+    color: #7166cf !important;
     padding: 20px 0;
     text-align: center;
     margin: 0;
@@ -164,6 +181,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 88px;
+    position: relative;
   }
   #hr-aside-video p {
     text-align: center;
@@ -188,7 +207,7 @@
     padding: 40px 0;
   }
   #hr-labimage-bg {
-    width: 50vw;
+    width: 57vw;
     height: auto;
     margin: 10px;
   }
@@ -202,5 +221,14 @@
   .hr-link-underline a {
     color: inherit;
     padding: 5px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #hr-aside {
+    width: 250px;
+  }
+  #hr-aside-video {
+    padding: 0 10px;
+    padding-top: 88px;
   }
 }

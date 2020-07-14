@@ -8,23 +8,29 @@ import VimeoVideo from "../components/vimeoemb";
 import cube from "../media/crowdcube.png";
 import BracketedText from "../components/bracketedText";
 import labbg from "../media/labBg.png";
+import CrowdCubeLogo from "../media/svgComponents/crowdcube_logo";
 
 function Hero() {
-  // const [, setShow] = useState(false);
+  const [hide, setHide] = useState();
+  const hideNotice = () => {
+    setHide(true);
+  };
   return (
     <header>
       <div id="hero-contn">
         <div id="hr-aside">
-          <div id="hr-notice">
-            <p>
-              This site uses cookies. <br />
-              View our policy →{" "}
-              <span className="hr-link-underline">
-                <a href="#">Hide notice</a>
-              </span>
-            </p>
-          </div>
           <div id="hr-aside-video">
+            <div style={{ display: hide ? "none" : "block" }} id="hr-notice">
+              <p>
+                This site uses cookies. <br />
+                View our policy →{" "}
+                <span className="hr-link-underline">
+                  <a onClick={hideNotice} href="#">
+                    Hide notice
+                  </a>
+                </span>
+              </p>
+            </div>
             <div id="hr-vid-comp">
               <VimeoVideo />
             </div>
@@ -38,7 +44,10 @@ function Hero() {
             <div id="hr-hrnt-cont">
               <hr />
             </div>
-            <img id="hr-cube-logo" src={cube} />
+            {/* <img id="hr-cube-logo" src={cube} /> */}
+            <div id="hr-cube-logo">
+              <CrowdCubeLogo />
+            </div>
           </div>
           <div id="hr-aside-logo-cont">
             <Logo color="#5D4DC4" height={80} />
