@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/newsletter.css";
 import Chimp from "../components/mc_form";
 import formImage from "../media/ogimage.jpg";
+
 function NewsLetter(props) {
   return (
     <div id="nl-container">

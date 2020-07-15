@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import OelButton from "../components/button";
 import VimeoVideo from "../components/vimeoemb";
 import "../styles/videosection.css";
+import VideoSectionBg from "../media/svgComponents/videoSectionBackground";
 
 function VideoSection() {
   const [, setShow] = useState(false);
@@ -18,6 +19,9 @@ function VideoSection() {
         alignItems: "center",
       }}
     >
+      {/* <div id={"vs-background"}>
+        <VideoSectionBg />
+      </div> */}
       <div id="vs-content-wrapper" style={{ background: "#FF7F48" }}>
         <div style={{ width: "100%", textAlign: "center" }}>
           <p id="vs-title"> Now raising on Crowdcube</p>
