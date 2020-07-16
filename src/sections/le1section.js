@@ -60,40 +60,43 @@ function Le1Section() {
                 alignItems: "center",
                 flexDirection: "column",
                 textAlign: "center",
-                width: "90%",
+                maxWidth: "100%",
+                width: "100%",
                 height: "100%",
               }}
             >
-              <p id="le1-product-name">Le1</p>
-              <div id="le1-bracketed-text">
-                <BracketedText height={5}>
-                  <p style={{ fontSize: "15px", margin: 0 }}>
-                    Teaching students how to build and maintain a renewable
-                    energy supply.
-                  </p>
-                </BracketedText>
-              </div>
-              <p id="le1-desc-text">
-                The Le1 gives students hands-on experience of building a
-                renewable electricity supply, able to provide reliable power for
-                lighting and mobile-phone charging.
-              </p>
-              {/* action buttons */}
-              <div id="le1-action-buttons">
-                <OelButton
-                  outline
-                  hideAnt
-                  name="Visit EMA website"
-                  color="#fff"
-                  textColor="#fff"
-                />
-                <OelButton
-                  outline
-                  hideAnt
-                  name="Graduate spotlight"
-                  color="#fff"
-                  textColor="#fff"
-                />
+              <div id="le1-copy-inner">
+                <p id="le1-product-name">Le1</p>
+                <div id="le1-bracketed-text">
+                  <BracketedText height={5}>
+                    <p style={{ fontSize: "15px", margin: 0 }}>
+                      Teaching students how to build and maintain a renewable
+                      energy supply.
+                    </p>
+                  </BracketedText>
+                </div>
+                <p id="le1-desc-text">
+                  The Le1 gives students hands-on experience of building a
+                  renewable electricity supply, able to provide reliable power
+                  for lighting and mobile-phone charging.
+                </p>
+                {/* action buttons */}
+                <div id="le1-action-buttons">
+                  <OelButton
+                    outline
+                    hideAnt
+                    name="Visit EMA website"
+                    color="#fff"
+                    textColor="#fff"
+                  />
+                  <OelButton
+                    outline
+                    hideAnt
+                    name="Graduate spotlight"
+                    color="#fff"
+                    textColor="#fff"
+                  />
+                </div>
               </div>
             </div>
           </div>

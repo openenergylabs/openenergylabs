@@ -12,18 +12,26 @@
 #le1-action-buttons .oelbtn {
   font-size: 12px;
   width: 140px;
+  margin-bottom: 50px;
+}
+#le1-action-buttons .oelbtn:hover {
+  color: #5d4dc4 !important;
+  background-color: #ffffff !important;
+}
+#le1-action-buttons a#oel-btn-container {
+  margin: 8px;
 }
 #le1-action-buttons {
   display: flex;
   justify-content: space-evenly;
   max-width: 100%;
-  width: 90%;
+  width: 80%;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
 #le1-desc-text {
-  font-size: 14px;
-  width: 100%;
+  font-size: 12px;
+  width: 80%;
 }
 #le1-img-cont {
   display: none;
@@ -31,10 +39,25 @@
 #le1-main-wrapper {
   padding: 150px 0;
 }
+#le1-copy-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 85%;
+}
 
 @media only screen and (min-width: 600px) {
+  #le1-copy-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 95%;
+    /* background-color: aqua; */
+  }
   #le1-intro-text {
     height: 100%;
+    width: 100%;
   }
   #le1-img-cont {
     display: block;
@@ -46,6 +69,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     grid-template-rows: min-content;
+    width: 100%;
   }
   #le1-main-wrapper {
     padding: 30px 0;
