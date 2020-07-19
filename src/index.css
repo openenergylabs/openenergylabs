@@ -14,7 +14,7 @@ html {
 body {
   margin: 0;
   font-family: "Gellix Regular";
-  /* font-feature-settings: "ss02", "ss09", "ss04", "ss11", "ss12", "ss13"; */
+  font-feature-settings: "ss02", "ss09", "ss04", "ss11", "ss12", "ss13";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fde3ca;

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import MenuIcon from "../media/svgComponents/dotsMenu";
 import Logo from "../media/svgComponents/logo";
 import Horizontal from "./horizontalLIne";
+import CloseIcon from "../media/svgComponents/closeIconMobile";
 
 function PopupMenu({ open, children, onClose }) {
   const [navigate, setNavigate] = useState(false);
@@ -37,6 +38,9 @@ function PopupMenu({ open, children, onClose }) {
           >
             <MenuIcon color={"#fff"} />
           </div>
+          <div onClick={onClose} id="mobile-close-btn">
+            <CloseIcon />
+          </div>
         </div>
 
         <div
@@ -55,20 +59,36 @@ function PopupMenu({ open, children, onClose }) {
                   <p>Crowdcube</p>
                 </a>
               </li>
+              <li className="pp-menu-item-saparator">
+                {" "}
+                <p>|</p>
+              </li>
               <li onClick={onMenuItemClicked}>
                 <a href="#whatwedo">
                   <p>What we do</p>
                 </a>
+              </li>
+              <li className="pp-menu-item-saparator">
+                {" "}
+                <p>|</p>
               </li>
               <li onClick={onMenuItemClicked}>
                 <a href="#nl-container">
                   <p>Newsletter</p>
                 </a>
               </li>
+              <li className="pp-menu-item-saparator">
+                {" "}
+                <p>|</p>
+              </li>
               <li onClick={onMenuItemClicked}>
                 <a href="#partners">
                   <p>Partners & Investers</p>
                 </a>
+              </li>
+              <li className="pp-menu-item-saparator">
+                {" "}
+                <p>|</p>
               </li>
               <li onClick={onMenuItemClicked}>
                 <a href="#footer-section">
