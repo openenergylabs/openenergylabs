@@ -101,6 +101,7 @@
 #hr-addr-lg {
   display: none;
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   #hr-logobtn-sec .oelbtn:hover {
@@ -215,13 +216,26 @@
     margin: 20px 10px;
   }
 
-  .hr-link-underline {
-    text-decoration: underline;
+  /* .hr-link-underline {
+    position: relative;
+    padding-bottom: 4px;
   }
+  .hr-underline-hover {
+    position: absolute;
+    border-bottom: #5d4dc4 1px solid;
+    width: 100%;
+    left: 0;
+    bottom: 3px;
+  }
+
   .hr-link-underline a {
     color: inherit;
-    padding: 5px;
+    text-decoration: none;
   }
+  .hr-link-underline a:hover {
+    color: inherit;
+    text-decoration: none;
+  } */
 }
 @media only screen and (max-width: 768px) {
   #hr-aside {

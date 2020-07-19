@@ -1,20 +1,16 @@
 import React, { useState } from "react";
 import OelButton from "../components/button";
 import "../styles/herosection.css";
-import AngleBracketLeft from "../media/svgComponents/angleBracketLeft";
-import AngleBracketRight from "../media/svgComponents/angleBracketRight";
 import Logo from "../media/svgComponents/logo";
 import VimeoVideo from "../components/vimeoemb";
-import cube from "../media/crowdcube.png";
 import BracketedText from "../components/bracketedText";
 import labbg from "../media/labBg.png";
 import CrowdCubeLogo from "../media/svgComponents/crowdcube_logo";
+import HoverUnderline from "../components/hoverUnderline";
 
 function Hero() {
   const [hide, setHide] = useState();
-  const hideNotice = () => {
-    setHide(true);
-  };
+
   return (
     <header>
       <div id="hero-contn">
@@ -24,11 +20,13 @@ function Hero() {
               <p>
                 This site uses cookies. <br />
                 View our policy →{" "}
-                <span className="hr-link-underline">
-                  <a onClick={hideNotice} href="#">
-                    Hide notice
-                  </a>
-                </span>
+                <HoverUnderline
+                  text={"Hide notice"}
+                  color="#7166cf"
+                  onLinkClicked={() => {
+                    setHide(true);
+                  }}
+                />
               </p>
             </div>
             <div id="hr-vid-comp">
@@ -37,9 +35,7 @@ function Hero() {
             <p>
               Now raising on Crowdcube <br />
               Join the OEL journey →{" "}
-              <span className="hr-link-underline">
-                <a href="#">Read more</a>
-              </span>
+              <HoverUnderline text={"Read more"} color="#a73200" />
             </p>
             <div id="hr-hrnt-cont">
               <hr />
