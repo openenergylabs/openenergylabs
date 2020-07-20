@@ -2,14 +2,19 @@ import * as React from "react";
 
 function Le1(props) {
   return (
-    <svg viewBox="0 0 317 478" fill="none" {...props}>
+    <svg
+      viewBox="0 0 317 478"
+      fill="none"
+      {...props}
+      preserveAspectRatio="none"
+    >
       <mask
         id="prefix__a"
         maskUnits="userSpaceOnUse"
         x={0}
         y={0}
-        width={317}
-        height={478}
+        // width={317}
+        // height={478}
       >
         <path
           fillRule="evenodd"

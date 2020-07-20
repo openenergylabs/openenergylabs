@@ -132,6 +132,17 @@ input:-webkit-autofill:hover {
   background-color: #942202;
   border: #ff9359 1px solid;
 }
+.clear .btn:focus {
+  color: #ff9359 !important;
+  background-color: #942202 !important;
+  border: #ff9359 1px solid !important;
+  box-shadow: 0 0 0 0.2rem rgb(255, 126, 72);
+}
+.clear .btn:active {
+  color: #ff9359 !important;
+  background-color: #942202 !important;
+  border: #ff9359 1px solid !important;
+}
 #nl-image {
   height: 100px;
   width: auto;

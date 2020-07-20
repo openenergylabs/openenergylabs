@@ -23,7 +23,7 @@ function Le1Section() {
       <MailModal show={show} onHide={handleClose} />
       <div
         id={"le1-main-wrapper"}
-        className="content"
+        // className="content"
         style={{
           height: "100%",
           ...common.centerItemsVt,
@@ -35,7 +35,7 @@ function Le1Section() {
             <div id="le1-img-cont">
               <Le1
                 style={{
-                  height: "auto",
+                  height: "100%",
                   width: "100%",
                   position: "relative",
                   left: "-50px",
