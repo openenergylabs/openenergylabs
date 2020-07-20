@@ -6,6 +6,7 @@ import Mch from "../media/svgComponents/machine";
 import CarouselComp from "../components/carasoul";
 import "../styles/whatwedo.css";
 import Partners from "../components/partners";
+import HoverUnderline from "../components/hoverUnderline";
 
 function WhatWeDoSection() {
   // const [, setShow] = useState(false);
@@ -39,9 +40,7 @@ function WhatWeDoSection() {
               them with the skills and knowledge to develop universal access to
               electricity.
             </p>
-            <a href="#">
-              <p className="linkText">Find out more</p>
-            </a>
+            <HoverUnderline text="Find out more" color="#fff" />
           </div>
           <div className="service-item">
             <Mch />
@@ -51,9 +50,8 @@ function WhatWeDoSection() {
               Our mobile learning platform and integrated hardware demystifies
               energy systems, and offers powerful capabilities for their design.
             </p>
-            <a href="#">
-              <p className="linkText">Find out more</p>
-            </a>
+
+            <HoverUnderline text="Find out more" color="#fff" />
           </div>
           <div className="service-item">
             <Pip />
@@ -63,9 +61,7 @@ function WhatWeDoSection() {
               We empower and inspire people and communities to innovate towards
               affordable, reliable and sustainable energy systems.
             </p>
-            <a href="#">
-              <p className="linkText">Find out more</p>
-            </a>
+            <HoverUnderline text="Find out more" color="#fff" />
           </div>
         </div>
 
@@ -81,9 +77,7 @@ function WhatWeDoSection() {
                 providing them with the skills and knowledge to develop
                 universal access to electricity.
               </p>
-              <a href="#">
-                <p className="linkText">Find out more</p>
-              </a>
+              <HoverUnderline text="Find out more" color="#fff" />
             </div>
             <div className="service-item">
               <Mch />
@@ -94,9 +88,7 @@ function WhatWeDoSection() {
                 energy systems, and offers powerful capabilities for their
                 design.
               </p>
-              <a href="#">
-                <p className="linkText">Find out more</p>
-              </a>
+              <HoverUnderline text="Find out more" color="#fff" />
             </div>
 
             <div lg={12} sm className="service-item">
@@ -107,9 +99,7 @@ function WhatWeDoSection() {
                 We empower and inspire people and communities to innovate
                 towards affordable, reliable and sustainable energy systems.
               </p>
-              <a href="#">
-                <p className="linkText">Find out more</p>
-              </a>
+              <HoverUnderline text="Find out more" color="#fff" />
             </div>
           </CarouselComp>
         </div>

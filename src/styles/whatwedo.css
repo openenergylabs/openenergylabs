@@ -22,7 +22,6 @@
   margin-top: 60px;
 }
 .service-item a {
-  border-bottom: #fff 1px solid;
   text-decoration: none;
   color: #fff;
 }
@@ -79,11 +78,17 @@
 }
 
 @media only screen and (min-width: 600px) {
+  .service-item {
+    max-width: 80%;
+  }
   #wd-sm-wrapper {
     display: none;
   }
   #wd-lg-wrapper {
     display: grid;
+    max-width: 1124px;
+    align-items: center;
+    justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
