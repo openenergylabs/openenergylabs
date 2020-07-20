@@ -1,4 +1,5 @@
 import React from "react";
+import HoverUnderline from "./hoverUnderline";
 function Chimp() {
   return (
     <div id="mc_embed_signup">
@@ -146,9 +147,14 @@ function Chimp() {
           </div>
           <div id="form-policy">
             <p>*Open Energy Labs is data responsible</p>
-            <a>
+            <HoverUnderline
+              text="Read our data policy here"
+              color="#ff9359"
+              size={13}
+            />
+            {/* <a>
               <p id="policy-link">Read our data policy here</p>
-            </a>
+            </a> */}
           </div>
         </div>
       </form>

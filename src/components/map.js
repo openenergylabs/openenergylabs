@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
 import OelMarker from "../media/svgComponents/marker";
+import { mapStyles } from "../styles/mapstyles";
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 function OelMap({ center, zoom }) {
@@ -10,6 +11,7 @@ function OelMap({ center, zoom }) {
         bootstrapURLKeys={{ key: "AIzaSyAIm5GstyNthUrJy4UjPCEGLDMlMDo6IY8" }}
         defaultCenter={center}
         defaultZoom={zoom}
+        options={{ styles: mapStyles }}
       >
         <OelMarker lat={-15.407269} lng={28.294508} />
       </GoogleMapReact>
@@ -22,6 +24,6 @@ OelMap.defaultProps = {
     lat: -15.407269,
     lng: 28.2945083,
   },
-  zoom: 15,
+  zoom: 14,
 };
 export default OelMap;

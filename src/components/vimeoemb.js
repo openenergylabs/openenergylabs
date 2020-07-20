@@ -5,7 +5,7 @@ function VimeoVideo() {
     <iframe
       id="videoFrame"
       src="https://player.vimeo.com/video/425909940"
-      width={500}
+      width={"auto"}
       height={"auto"}
       frameBorder={0}
       allow="autoplay; fullscreen"

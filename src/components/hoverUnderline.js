@@ -4,6 +4,7 @@ function HoverUnderline({
   text = "hello",
   color = "#000",
   onLinkClicked = () => true,
+  size = "",
 }) {
   const [hover, setHover] = useState(false);
   const handleLinkHover = () => {
@@ -17,7 +18,7 @@ function HoverUnderline({
         onMouseOut={handleLinkHover}
         onMouseOver={handleLinkHover}
         href="#"
-        style={{ color: color }}
+        style={{ color: color, fontSize: size }}
       >
         {text}
       </a>

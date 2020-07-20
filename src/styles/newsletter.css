@@ -43,7 +43,7 @@ input:-webkit-autofill:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../media/newsletter_bg.png");
+  background-image: url("../media/newsletterbg.png");
 }
 #mc_embed_signup_scroll {
   display: flex;
@@ -106,13 +106,13 @@ input:-webkit-autofill:hover {
   color: #ff9359;
   width: 100%;
 }
-#policy-link {
+/* #policy-link {
   border-bottom: 1px solid #ff9359;
 }
 #policy-link:hover {
   position: relative;
   padding-bottom: 2px;
-}
+} */
 .clear {
   display: flex;
   flex-direction: column;
@@ -124,8 +124,13 @@ input:-webkit-autofill:hover {
   color: #942202;
   background-color: #ff9359;
   border-radius: 30px;
-  border: none;
+  border: #942202 1px solid;
   font-size: 13px;
+}
+.clear .btn:hover {
+  color: #ff9359;
+  background-color: #942202;
+  border: #ff9359 1px solid;
 }
 #nl-image {
   height: 100px;
@@ -169,7 +174,10 @@ input:-webkit-autofill:hover {
     display: none;
   }
   #nl-image {
-    height: 200px;
-    width: auto;
+    height: auto;
+    width: 30vw;
+  }
+  #nl-img-cont {
+    margin: 20px;
   }
 }

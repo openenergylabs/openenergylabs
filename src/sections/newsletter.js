@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/newsletter.css";
 import Chimp from "../components/mc_form";
-import formImage from "../media/ogimage.jpg";
+import formImage from "../media/newsletterBg.jpg";
 
 function NewsLetter(props) {
   return (

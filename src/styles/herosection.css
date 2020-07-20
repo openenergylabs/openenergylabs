@@ -208,9 +208,10 @@
     padding: 40px 0;
   }
   #hr-labimage-bg {
-    width: 57vw;
+    width: 50vw;
     height: auto;
     margin: 10px;
+    max-height: 45vh;
   }
   #actn-btns-ls li {
     margin: 20px 10px;
