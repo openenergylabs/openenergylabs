@@ -50,4 +50,23 @@
   #ptn-web {
     display: block;
   }
+  /* component */
+  #partnerLogos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 150px));
+    width: 100%;
+    max-width: 1024px;
+    gap: 40px;
+
+    /* gridTemplateColumns: "",
+    width: "100%",
+    maxWidth: "1118px",
+    marginTop: "2rem",
+    justifyItems: "start",
+    alignItems: "center",
+    // columnGap: 20,
+    gridGap: 50, */
+  }
+  #partnerLogos a {
+  }
 }
