@@ -9,7 +9,7 @@ function BracketedText({ children, height }) {
         display: "flex",
         flexDirection: "row",
         width: "100%",
-        alignItems: "center",
+        // alignItems: "center",
         justifyContent: "space-evenly",
         textAlign: "center",
         height: "100%",
@@ -18,7 +18,7 @@ function BracketedText({ children, height }) {
       <div style={{ height: `${height}rem` }}>
         <AngleBracketLeft />
       </div>
-      <div>{children}</div>
+      <div id="brckt-content">{children}</div>
       <div style={{ height: `${height}rem` }}>
         <AngleBracketRight />
       </div>
