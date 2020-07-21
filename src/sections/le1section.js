@@ -1,26 +1,21 @@
 import React, { useState } from "react";
-import Container from "react-bootstrap/Container";
 import common from "../styles/styles";
-import MailModal from "../components/modal";
 import Le1 from "../media/svgComponents/Le1";
 import BracketedText from "../components/bracketedText";
 import "../styles/le1section.css";
 import OelButton from "../components/button";
 
 function Le1Section() {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-
   return (
     <section
-      // id="le1section"
+      id="le1sect"
       className={"section"}
       style={{
         backgroundColor: "#5D4DC4",
         color: "#fff",
       }}
     >
-      <MailModal show={show} onHide={handleClose} />
+      {/* <MailModal show={show} onHide={handleClose} /> */}
       <div
         id={"le1-main-wrapper"}
         // className="content"

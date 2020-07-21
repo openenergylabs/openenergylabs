@@ -73,6 +73,15 @@ function PopupMenu({ open, children, onClose }) {
                 <p>|</p>
               </li>
               <li onClick={onMenuItemClicked}>
+                <a href="#le1sect">
+                  <p>Le1</p>
+                </a>
+              </li>
+              <li className="pp-menu-item-saparator">
+                {" "}
+                <p>|</p>
+              </li>
+              <li onClick={onMenuItemClicked}>
                 <a href="#nl-container">
                   <p>Newsletter</p>
                 </a>

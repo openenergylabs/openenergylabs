@@ -44,6 +44,7 @@ input:-webkit-autofill:hover {
   flex-direction: column;
   align-items: center;
   background-image: url("../media/newsletterbg.png");
+  background-size: cover;
 }
 #mc_embed_signup_scroll {
   display: flex;
