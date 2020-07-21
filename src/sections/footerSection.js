@@ -49,7 +49,7 @@ function FooterSection() {
                 <p>&#8599; LinkedIn</p>
               </a>
               <a href="https://www.youtube.com/channel/UCIlPJfPOl-9aHnESa_MxBPg">
-                <p>&#8599; Youtube</p>
+                <p>&#8599; YouTube</p>
               </a>
               <a href="https://www.instagram.com/openenergylabs/">
                 <p>&#8599; Instagram</p>
@@ -61,16 +61,13 @@ function FooterSection() {
 
             <ul id={"ftr-cta-links"}>
               <li>
-                <p>Contact us</p>
+                <a href="mailto:contact@openenergylabs.co"><p>Contact us</p></a>
               </li>
               <li>
-                <p>Newsletter</p>
+                <a href="#nl-container"><p>Newsletter</p></a>
               </li>
               <li>
-                <p>Terms</p>
-              </li>
-              <li>
-                <p>Credits</p>
+                <p>Privacy Policy</p>
               </li>
             </ul>
           </div>

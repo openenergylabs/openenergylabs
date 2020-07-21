@@ -80,14 +80,16 @@ function Le1Section() {
                   <OelButton
                     outline
                     hideAnt
-                    name="Visit EMA website"
+                    name="See Le1 in action"
+                    path="#vs-container"
                     color="#fff"
                     textColor="#fff"
                   />
                   <OelButton
                     outline
                     hideAnt
-                    name="Graduate spotlight"
+                    name="Invest now"
+                    path="https://www.crowdcube.com/companies/open-energy-labs/pitches/b6nMpb"
                     color="#fff"
                     textColor="#fff"
                   />

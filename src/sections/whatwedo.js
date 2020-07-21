@@ -40,7 +40,7 @@ function WhatWeDoSection() {
               them with the skills and knowledge to develop universal access to
               electricity.
             </p>
-            <HoverUnderline text="Find out more" color="#fff" />
+
           </div>
           <div className="service-item">
             <Mch />
@@ -51,7 +51,7 @@ function WhatWeDoSection() {
               energy systems, and offers powerful capabilities for their design.
             </p>
 
-            <HoverUnderline text="Find out more" color="#fff" />
+
           </div>
           <div className="service-item">
             <Pip />
@@ -61,7 +61,6 @@ function WhatWeDoSection() {
               We empower and inspire people and communities to innovate towards
               affordable, reliable and sustainable energy systems.
             </p>
-            <HoverUnderline text="Find out more" color="#fff" />
           </div>
         </div>
 
@@ -88,7 +87,6 @@ function WhatWeDoSection() {
                 energy systems, and offers powerful capabilities for their
                 design.
               </p>
-              <HoverUnderline text="Find out more" color="#fff" />
             </div>
 
             <div lg={12} sm className="service-item">

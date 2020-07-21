@@ -146,7 +146,7 @@ function PartnersSection() {
             </p>
           </div>
           <OelButton
-            path="mailto:hello@localelectricity.org"
+            path="mailto:contact@openenergylabs.co"
             color="#5D4DC4"
             name="Partner with us"
             hideAnt

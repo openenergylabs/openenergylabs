@@ -64,16 +64,19 @@ function Hero() {
                 <li>
                   <OelButton
                     hideAnt
-                    name="find out"
+                    name="Learn more"
+                    path="#vs-container"
                     color="#6C5DC9"
                     textColor="#fff"
                   />
                 </li>
                 <li>
-                  <OelButton hideAnt name="Get in touch" color="#6C5DC9" />
-                </li>
-                <li>
-                  <OelButton hideAnt name="holder" color="#6C5DC9" />
+                  <OelButton 
+                    hideAnt 
+                    name="Get in touch" 
+                    color="#6C5DC9" 
+                    path="mailto:contact@openenergylabs.co"
+                   />
                 </li>
               </ul>
               <div id="hr-logo-cnt">
