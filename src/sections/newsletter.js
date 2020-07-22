@@ -5,7 +5,7 @@ import formImage from "../media/newsletterBg.jpg";
 
 function NewsLetter(props) {
   return (
-    <div id="nl-container">
+    <div id="newsletter">
       <div id={"nl-content-wrapper"}>
         <p id="nl-title">Newsletter</p>
         <div className="nl-hr-container">

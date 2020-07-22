@@ -61,10 +61,14 @@ function FooterSection() {
 
             <ul id={"ftr-cta-links"}>
               <li>
-                <a href="mailto:contact@openenergylabs.co"><p>Contact us</p></a>
+                <a href="mailto:contact@openenergylabs.co">
+                  <p>Contact us</p>
+                </a>
               </li>
               <li>
-                <a href="#nl-container"><p>Newsletter</p></a>
+                <a href="#newsletter">
+                  <p>Newsletter</p>
+                </a>
               </li>
               <li>
                 <p>Privacy Policy</p>

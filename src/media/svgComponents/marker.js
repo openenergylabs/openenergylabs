@@ -2,7 +2,14 @@ import * as React from "react";
 
 function OelMarker(props) {
   return (
-    <svg width={22} height={35} viewBox="0 0 22 35" fill="none" {...props}>
+    <svg
+      width={22}
+      height={35}
+      viewBox="0 0 22 35"
+      preserveAspectRatio={"none"}
+      fill="none"
+      {...props}
+    >
       <path
         fillRule="evenodd"
         clipRule="evenodd"

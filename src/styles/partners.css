@@ -1,14 +1,15 @@
 .ptn-partners-bunch {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(85px, max-content));
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
   gap: 10px;
   width: 100%;
   max-width: 100%;
-  justify-content: center;
+  justify-items: center;
   row-gap: 30px;
+  align-items: center;
 }
 #partners-mobile {
-  height: 300px;
+  height: 350px;
   width: 100%;
 }
 #partners-mobile .carousel-indicators li {
@@ -35,6 +36,12 @@
 #ptn-web {
   display: none;
 }
+
+@media only screen and (min-width: 400px) {
+  .ptn-partners-bunch {
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  }
+}
 @media only screen and (min-width: 600px) {
   #caption-text-cont {
     display: flex;
@@ -48,15 +55,21 @@
     display: none;
   }
   #ptn-web {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1024px;
   }
   /* component */
   #partnerLogos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(auto, 150px));
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
     width: 100%;
-    max-width: 1024px;
     gap: 40px;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
 
     /* gridTemplateColumns: "",
     width: "100%",

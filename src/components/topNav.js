@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import PopupMenu from "./popupMenu";
 import OelButton from "./button";
 import MenuIcon from "../media/svgComponents/dotsMenu";
-import Logo from "../media/svgComponents/logo";
 function TopNav() {
   const [open, setOpen] = useState(false);
-  const openHandler = (e) => {
+  const openHandler = () => {
     setOpen(!open);
   };
   return (
@@ -18,6 +17,7 @@ function TopNav() {
         }}
       ></PopupMenu>
       <div className="em-top-nav">
+        <div id="spacer"></div>
         <div id="em-tn-title-cnt">
           <h2 className="em-tn-title">Open Energy Labs</h2>
         </div>

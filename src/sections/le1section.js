@@ -8,7 +8,7 @@ import OelButton from "../components/button";
 function Le1Section() {
   return (
     <section
-      id="le1sect"
+      id="le1"
       className={"section"}
       style={{
         backgroundColor: "#5D4DC4",
@@ -81,7 +81,7 @@ function Le1Section() {
                     outline
                     hideAnt
                     name="See Le1 in action"
-                    path="#vs-container"
+                    path="#updates"
                     color="#fff"
                     textColor="#fff"
                   />

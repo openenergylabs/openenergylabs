@@ -10,7 +10,7 @@ function VideoSection() {
 
   return (
     <section
-      id="vs-container"
+      id="updates"
       className={"section"}
       style={{
         backgroundColor: "#5D4DC4",

@@ -2,7 +2,7 @@
 .em-top-nav {
   color: #7166cf;
   display: grid;
-  grid-template-columns: 1fr max-content;
+  grid-template-columns: 1fr max-content 1fr;
   padding: 10px 0;
   background-color: #ffffff;
   position: fixed;
@@ -10,10 +10,10 @@
   width: 100%;
 }
 .em-tn-title {
-  /* font-size: 1.5rem; */
   text-align: center;
-  padding-left: 32px;
-  font-weight: 700;
+  /* padding-left: 32px; */
+  font-size: 25px;
+  font-family: "Gellix Medium";
 }
 
 .em-top-nav-menu-button {
@@ -30,20 +30,21 @@
   display: none;
 }
 #em-menu-btns .oelbtn:hover {
-  /* display: none; */
   color: #ffffff !important;
   background-color: #7166cf !important;
 }
 #em-menu-btns {
-  display: block;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 /* pop up menu styles */
 .pp-menu-title {
-  /* font-size: 1.5rem; */
   text-align: center;
   margin-left: 30px;
-  font-weight: 700;
+  font-family: "Gellix Medium";
 }
 #mobile-close-btn {
   text-align: center;
@@ -186,6 +187,7 @@
     justify-items: flex-end;
     width: 200px;
     column-gap: 20px;
+    width: 100%;
   }
   #em-menu-btns .oelbtn {
     display: block;
@@ -199,6 +201,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 200px;
   }
+}
+
+/* large screens */
+@media only screen and (min-width: 768px) {
+  /* #spacer; */
 }

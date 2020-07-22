@@ -55,7 +55,7 @@ function PopupMenu({ open, children, onClose }) {
           <div className="pp-menu-child ">
             <ul id="pp-menu-list">
               <li onClick={onMenuItemClicked}>
-                <a href="#vs-container">
+                <a href="#updates">
                   <p>Crowdcube</p>
                 </a>
               </li>
@@ -73,7 +73,7 @@ function PopupMenu({ open, children, onClose }) {
                 <p>|</p>
               </li>
               <li onClick={onMenuItemClicked}>
-                <a href="#le1sect">
+                <a href="#le1">
                   <p>Le1</p>
                 </a>
               </li>
@@ -82,7 +82,7 @@ function PopupMenu({ open, children, onClose }) {
                 <p>|</p>
               </li>
               <li onClick={onMenuItemClicked}>
-                <a href="#nl-container">
+                <a href="#newsletter">
                   <p>Newsletter</p>
                 </a>
               </li>

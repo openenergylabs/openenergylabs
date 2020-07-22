@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Gellix Medium";
+  src: local("Gellix Medium"), url("../fonts/Gellix-Medium.woff2"),
+    url("../fonts/Gellix-Medium.woff"), url("../fonts/Gellix-Medium.eot");
+}
 #hero-contn {
   height: 90vh;
 }
@@ -41,7 +46,8 @@
   font-size: 1.5rem;
   color: #fff;
   margin: 10px;
-  font-weight: 700;
+  /* font-weight: 700; */
+  font-family: "Gellix Medium";
 }
 #hr-logobtn-sec {
   margin: 0px;

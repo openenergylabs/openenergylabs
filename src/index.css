@@ -2,8 +2,11 @@
   font-family: "Gellix Regular";
   src: local("Gellix Regular"), url("./fonts/Gellix-Regular.woff2"),
     url("./fonts/Gellix-Regular.woff"), url("./fonts/Gellix-Regular.ttf");
+}
+@font-face {
+  font-family: "Gellix Medium";
   src: local("Gellix Medium"), url("./fonts/Gellix-Medium.woff2"),
-    url("./fonts/Gellix-Medium.woff");
+    url("./fonts/Gellix-Medium.woff"), url("./fonts/Gellix-Medium.eot");
 }
 
 html {
