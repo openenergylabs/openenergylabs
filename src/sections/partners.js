@@ -20,6 +20,8 @@ import ukri from "../media/ukri.png";
 import vs from "../media/vs.png";
 import ria from "../media/ria.png";
 import CarouselComp from "../components/carasoul";
+import efi from "../media/Energy4Impact.png";
+import ntbc from "../media/ntbc.jpg";
 
 function PartnersSection() {
   const [show, setShow] = useState(false);
@@ -91,6 +93,12 @@ function PartnersSection() {
             <a href="https://www.renewablesinafrica.com/">
               <img style={{ width: 100, height: "auto" }} src={ria} />
             </a>
+            <a href="https://www.energy4impact.org/">
+              <img style={{ width: 110, height: "auto" }} src={efi} />
+            </a>
+            <a href="http://ntbc.co.zm/">
+              <img style={{ width: 110, height: "auto" }} src={ntbc} />
+            </a>
           </Partners>
         </div>
         <div id="partners-mobile">
@@ -132,6 +140,12 @@ function PartnersSection() {
                   className="ptn-logo"
                   src={ria}
                 />
+              </a>
+              <a href="https://www.energy4impact.org/">
+                <img style={{ width: 110, height: "auto" }} src={efi} />
+              </a>
+              <a href="http://ntbc.co.zm/">
+                <img style={{ width: 110, height: "auto" }} src={ntbc} />
               </a>
             </div>
           </CarouselComp>
