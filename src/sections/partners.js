@@ -21,7 +21,7 @@ import vs from "../media/vs.png";
 import ria from "../media/ria.png";
 import CarouselComp from "../components/carasoul";
 import efi from "../media/Energy4Impact.png";
-import ntbc from "../media/ntbc.jpg";
+import ntbc from "../media/ntbc.png";
 
 function PartnersSection() {
   const [show, setShow] = useState(false);
