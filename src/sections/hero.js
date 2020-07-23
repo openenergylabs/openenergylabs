@@ -80,7 +80,7 @@ function Hero() {
                 </li>
               </ul>
               <div id="hr-logo-cnt">
-                <Logo id="hr-logo" />
+                <Logo height={65} id="hr-logo" />
               </div>
             </div>
           </div>
