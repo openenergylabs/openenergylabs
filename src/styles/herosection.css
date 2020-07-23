@@ -230,6 +230,9 @@
   #hr-aside-logo-cont {
     background: #fff;
     padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   #hr-labimage-bg {
     width: 100%;

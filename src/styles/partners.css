@@ -19,7 +19,7 @@
   font-size: 20px;
   text-align: center;
   color: #7166cf;
-  margin: 50px 0px 50px 0px;
+  margin: 50px 0px 65px 0px;
 }
 .ptn-logo {
   width: auto;
@@ -32,6 +32,10 @@
 }
 #ptn-bottom-text-and-btn .oelbtn {
   font-size: 12px;
+}
+#ptn-bottom-text-and-btn .oelbtn:hover {
+  background-color: #fff !important;
+  color: #5d4dc4 !important;
 }
 #ptn-web {
   display: none;

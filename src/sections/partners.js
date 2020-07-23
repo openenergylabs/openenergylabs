@@ -89,7 +89,7 @@ function PartnersSection() {
               <img style={{ width: "auto", height: 50 }} src={dfid} />
             </a>
             <a href="https://www.renewablesinafrica.com/">
-              <img style={{ width: "auto", height: 50 }} src={ria} />
+              <img style={{ width: 100, height: "auto" }} src={ria} />
             </a>
           </Partners>
         </div>
@@ -127,7 +127,11 @@ function PartnersSection() {
 
             <div className="ptn-partners-bunch">
               <a href="https://www.renewablesinafrica.com/">
-                <img className="ptn-logo" src={ria} />
+                <img
+                  style={{ width: 100, height: "auto" }}
+                  className="ptn-logo"
+                  src={ria}
+                />
               </a>
             </div>
           </CarouselComp>
