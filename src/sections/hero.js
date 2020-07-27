@@ -18,8 +18,7 @@ function Hero() {
           <div id="hr-aside-video">
             <div style={{ display: hide ? "none" : "block" }} id="hr-notice">
               <p>
-                This site uses cookies. <br />
-                View our policy →{" "}
+                This site uses cookies →{" "}
                 <HoverUnderline
                   text={"Hide notice"}
                   color="#7166cf"

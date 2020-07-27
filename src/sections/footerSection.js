@@ -70,9 +70,6 @@ function FooterSection() {
                   <p>Newsletter</p>
                 </a>
               </li>
-              <li>
-                <p>Privacy Policy</p>
-              </li>
             </ul>
           </div>
         </div>
