@@ -145,15 +145,15 @@ input:-webkit-autofill:hover {
   border: #ff9359 1px solid !important;
 }
 #nl-image {
-  height: 100px;
-  width: auto;
+  height: auto;
+  width: 50vw;
 }
 #form-radio {
   display: flex;
   align-items: center;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   #nl-content-wrapper .nl-hr-container .nl-hr {
     margin: 0;
   }
