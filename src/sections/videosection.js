@@ -24,7 +24,7 @@ function VideoSection() {
       </div> */}
       <div id="vs-content-wrapper" style={{ background: "#FF7F48" }}>
         <div style={{ width: "100%", textAlign: "center" }}>
-          <p id="vs-title"> Now raising on Crowdcube</p>
+          <p id="vs-title"> We raised £120K on Crowdcube</p>
           <hr id="vs-hr" style={{ borderColor: "#FF8A58" }} />
         </div>
         <div id="vs-content-inner-wrapper">
@@ -37,11 +37,12 @@ function VideoSection() {
             <p
               style={{ textAlign: "center", fontSize: "12px", margin: "20px" }}
             >
-              Invest in our vision
+              Invested in our vision
             </p>
             <p style={{ textAlign: "center", margin: "20px" }}>
               To develop technology and deliver our programme to 110,000
-              students in Zambia, we are about to open a crowd investment round.
+              students in Zambia, we opened a crowd investment round. 
+              Click through to see why over 300 people invested.
             </p>
 
             <div id="vs-actn-btn">
@@ -50,7 +51,8 @@ function VideoSection() {
                 path="https://www.crowdcube.com/companies/open-energy-labs/pitches/b6nMpb"
                 color={"#942202"}
                 textColor="#FF9359"
-                name={"Invest now"}
+                name={"See our campaign"}
+                target={"_blank"}
               />
             </div>
           </div>

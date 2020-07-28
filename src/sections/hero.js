@@ -32,9 +32,13 @@ function Hero() {
               <VimeoVideo />
             </div>
             <p>
-              Now raising on Crowdcube <br />
-              Join the OEL journey →{" "}
-              <HoverUnderline text={"Read more"} color="#a73200" />
+              We raised £120K on Crowdcube <br />
+              See why people invested →{" "}
+              <HoverUnderline 
+                text={"Read more"} 
+                color="#a73200" 
+                href="#updates"
+                />
             </p>
             <div id="hr-hrnt-cont">
               <hr />

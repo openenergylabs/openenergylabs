@@ -9,6 +9,7 @@ function OelButton({
   hideAnt,
   textColor,
   outline,
+  target
 }) {
   const onButtonPressed = (e) => {
     if (onPressed) {
@@ -27,6 +28,7 @@ function OelButton({
         textDecoration: "none",
       }}
       href={path}
+      target={target}
     >
       <div
         style={{

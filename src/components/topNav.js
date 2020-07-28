@@ -23,14 +23,7 @@ function TopNav() {
         </div>
         <div id="em-menu-btns">
           {/* <div> */}
-          <OelButton
-            name="Invest now"
-            hideAnt
-            outline
-            color="#5D4DC4"
-            textColor="#5D4DC4"
-            path="https://www.crowdcube.com/companies/open-energy-labs/pitches/b6nMpb"
-          />
+          
           {/* </div> */}
           <div
             onClick={openHandler}

@@ -85,14 +85,7 @@ function Le1Section() {
                     color="#fff"
                     textColor="#fff"
                   />
-                  <OelButton
-                    outline
-                    hideAnt
-                    name="Invest now"
-                    path="https://www.crowdcube.com/companies/open-energy-labs/pitches/b6nMpb"
-                    color="#fff"
-                    textColor="#fff"
-                  />
+                  
                 </div>
               </div>
             </div>

@@ -56,7 +56,7 @@ function PopupMenu({ open, children, onClose }) {
             <ul id="pp-menu-list">
               <li onClick={onMenuItemClicked}>
                 <a href="#updates">
-                  <p>Crowdcube</p>
+                  <p>Updates</p>
                 </a>
               </li>
               <li className="pp-menu-item-saparator">
