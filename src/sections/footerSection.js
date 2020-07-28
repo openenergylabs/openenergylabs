@@ -29,8 +29,8 @@ function FooterSection() {
           <div id="ftr-logo-and-socials-container">
             <p id="ftr-address">
               Open Energy Labs <br />
-              32/6 Joseph Mwila Road <br />
-              Rhodes park, <br />
+              32/6 Joseph Mwilwa Road <br />
+              Rhodes Park<br />
               Lusaka — Zambia
             </p>
 
